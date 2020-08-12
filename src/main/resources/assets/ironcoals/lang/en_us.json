@@ -1,0 +1,18 @@
+{
+ "itemGroup.ironcoalstab": "Iron Coals",
+ 
+ 
+ 
+ "item.ironcoals.iron_coal": "Iron Coal",
+ "item.ironcoals.gold_coal": "Gold Coal",
+ "item.ironcoals.diamond_coal": "Diamond Coal",
+ "item.ironcoals.emerald_coal": "Emerald Coal",
+ "item.ironcoals.aeon_coal": "Aeon Coal",
+ 
+ "message.ironcoal":"1.5x coal",
+  "message.goldcoal":"3.0x coal",
+   "message.diamondcoal":"6.0x coal",
+    "message.emeraldcoal":"12.0x coal",
+    "message.aeoncoal":"Literally forever"
+
+}
