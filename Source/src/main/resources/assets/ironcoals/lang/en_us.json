@@ -9,10 +9,10 @@
  "item.ironcoals.emerald_coal": "Emerald Coal",
  "item.ironcoals.aeon_coal": "Aeon Coal",
  
- "message.ironcoal":"1.5x coal",
-  "message.goldcoal":"3.0x coal",
-   "message.diamondcoal":"6.0x coal",
-    "message.emeraldcoal":"12.0x coal",
-    "message.aeoncoal":"Literally forever"
+ "message.ironcoal":"Burn Time: 1.5x coal",
+  "message.goldcoal":"Burn Time: 3.0x coal",
+   "message.diamondcoal":"Burn Time: 6.0x coal",
+    "message.emeraldcoal":"Burn Time: 12.0x coal",
+    "message.aeoncoal":"Burn Time: Literally forever"
 
 }
