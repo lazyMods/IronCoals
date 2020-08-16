@@ -17,7 +17,7 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 # The modid of the mod
 modId="ironcoals" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="${file.jarVersion}" #mandatory
+version="$1.1.0" #mandatory
  # A display name for the mod
 displayName="Iron Coals" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
@@ -30,10 +30,20 @@ logoFile="examplemod.png" #optional
 credits="Flamebom and all the people on the Forge Discord!" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Check Curseforge for the description of the mod.
+Adds 5 tiers of coal
+
+- Iron Coal is 1.5x better then regular Coal
+
+- Gold Coal is 3.0x better then regular Coal
+
+-Diamond Coal is 6.0x better then regular Coal
+
+- Emerald Coal is 12.0x better then regular Coal
+
+- Aeon Coal lasts infinity... at a huge price to make
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.examplemod]] #optional
+[[dependencies.ironcoals]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -45,7 +55,7 @@ Check Curseforge for the description of the mod.
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.examplemod]]
+[[dependencies.ironcoals]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.1]"
