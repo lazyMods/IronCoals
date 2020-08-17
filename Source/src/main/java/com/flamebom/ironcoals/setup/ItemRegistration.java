@@ -4,6 +4,7 @@ package com.flamebom.ironcoals.setup;
 
 
 import com.flamebom.ironcoals.IronCoals;
+import com.flamebom.ironcoals.block.IronCoalBlockItem;
 import com.flamebom.ironcoals.items.AeonCoal;
 import com.flamebom.ironcoals.items.DiamondCoal;
 import com.flamebom.ironcoals.items.EmeraldCoal;
@@ -24,4 +25,6 @@ public class ItemRegistration {
 	public static final RegistryObject<Item> DIAMONDCOAL = ITEMS.register("diamond_coal", DiamondCoal::new);
 	public static final RegistryObject<Item> EMERALDCOAL = ITEMS.register("emerald_coal", EmeraldCoal::new);
 	public static final RegistryObject<Item> AEONCOAL = ITEMS.register("aeon_coal", AeonCoal::new);
+	
+	public static final RegistryObject<Item> IRONCOALBLOCKITEM = ITEMS.register("iron_coal_block",IronCoalBlockItem::new);
 }

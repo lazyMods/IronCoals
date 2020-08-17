@@ -1,5 +1,7 @@
 package com.flamebom.ironcoals.datagen;
 
+import com.flamebom.ironcoals.setup.BlockRegistration;
+
 import net.minecraft.data.DataGenerator;
 
 public class LootTables extends BaseLootTable {
@@ -10,7 +12,7 @@ public class LootTables extends BaseLootTable {
 
 	@Override
 	protected void addTables() {
-		// TODO Auto-generated method stub
+lootTables.put(BlockRegistration.IRONCOALBLOCK.get(), createStandardTable("iron_coal_block", BlockRegistration.IRONCOALBLOCK.get()));
 
 	}
 }

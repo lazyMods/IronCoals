@@ -2,6 +2,7 @@
  "itemGroup.ironcoalstab": "Iron Coals",
  
  
+ "block.ironcoals.iron_coal_block:"Iron Coal Block",
  
  "item.ironcoals.iron_coal": "Iron Coal",
  "item.ironcoals.gold_coal": "Gold Coal",
@@ -10,9 +11,10 @@
  "item.ironcoals.aeon_coal": "Aeon Coal",
  
  "message.ironcoal":"Burn Time: 1.5x coal",
-  "message.goldcoal":"Burn Time: 3.0x coal",
-   "message.diamondcoal":"Burn Time: 6.0x coal",
-    "message.emeraldcoal":"Burn Time: 12.0x coal",
-    "message.aeoncoal":"Burn Time: Literally forever"
+ "message.ironcoalblock":"Burn Time: 13.5x coal",
+ "message.goldcoal":"Burn Time: 3.0x coal",
+ "message.diamondcoal":"Burn Time: 6.0x coal",
+  "message.emeraldcoal":"Burn Time: 12.0x coal",
+  "message.aeoncoal":"Burn Time: Literally forever"
 
 }

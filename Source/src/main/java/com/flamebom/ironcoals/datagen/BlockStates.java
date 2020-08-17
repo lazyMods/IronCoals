@@ -1,6 +1,7 @@
 package com.flamebom.ironcoals.datagen;
 
 import com.flamebom.ironcoals.IronCoals;
+import com.flamebom.ironcoals.setup.BlockRegistration;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -19,7 +20,7 @@ public class BlockStates extends BlockStateProvider {
 
 	@Override
 	protected void registerStatesAndModels() {
-
+simpleBlock(BlockRegistration.IRONCOALBLOCK.get());
 		
 	}
 }

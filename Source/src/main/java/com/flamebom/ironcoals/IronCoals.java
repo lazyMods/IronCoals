@@ -12,7 +12,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.ItemRegistration;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,6 +27,7 @@ public class IronCoals
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
     	ItemRegistration.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	BlockRegistration.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         MinecraftForge.EVENT_BUS.register(this);
     }
 
