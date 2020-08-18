@@ -1,12 +1,12 @@
 package com.flamebom.ironcoals.datagen;
 
 import com.flamebom.ironcoals.IronCoals;
+import com.flamebom.ironcoals.setup.ItemRegistration;
 
-import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.ExistingFileHelper;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.client.model.generators.ModelFile;
 
 public class Items extends ItemModelProvider {
 
@@ -17,15 +17,8 @@ public class Items extends ItemModelProvider {
 
 	@Override
 	protected void registerModels() {
+		 withExistingParent("item/"+ ItemRegistration.IRONCOALBLOCKITEM.get().getRegistryName().getPath(),
+	                new ResourceLocation(IronCoals.MOD_ID, "block/iron_coal_block"));
 	}
-    private void registerBlockModel(Block block) {
-        String path = block.getRegistryName().getPath();
-        getBuilder(path).parent(new ModelFile.UncheckedModelFile(modLoc("block/" + path)));
-    }
-
-    @Override
-    public String getName() {
-        return "Item Models";
-    }
 
 }

@@ -1,3 +1,6 @@
+8ae3d45214af6ef203216d7b47c10736f5d2e160 assets/ironcoals/blockstates/iron_coal_block.json
+34931313487bbef2a62e52b36a4e00e774d2685b assets/ironcoals/models/block/iron_coal_block.json
+ff455da47d65ecd13a1fd535094baeec24390b26 assets/ironcoals/models/item/iron_coal_block.json
 08211cae7d95852638736131c7769803e9cb9a5f data/ironcoals/advancements/recipes/ironcoalstab/aeon_coal.json
 af12e23143116ca21e262ca8adc9c2ea4bfe0292 data/ironcoals/advancements/recipes/ironcoalstab/diamond_coal.json
 bde7d1b331b16cb19f7ee915dcf4e1c2deb8777c data/ironcoals/advancements/recipes/ironcoalstab/emerald_coal.json
