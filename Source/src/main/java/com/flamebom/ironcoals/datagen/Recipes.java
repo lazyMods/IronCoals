@@ -67,5 +67,13 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
+	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOALBLOCKITEM.get())
+	         .patternLine("aaa")
+	         .patternLine("aaa")
+	         .patternLine("aaa")
+	         .key('a', ItemRegistration.IRONCOAL.get())
+	         .setGroup("IronCoals")
+	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	         .build(consumer);
 }
 	 }
