@@ -4,8 +4,7 @@ package com.flamebom.ironcoals.items;
 
 import java.util.List;
 
-import com.flamebom.ironcoals.IronCoals.CreativeItemGroup;
-
+import com.flamebom.ironcoals.IronCoals;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -16,7 +15,7 @@ import net.minecraft.world.World;
 
 public class DiamondCoal extends Item {
 	public DiamondCoal() {
-		super(new Item.Properties().group(CreativeItemGroup.instance));
+		super(new Item.Properties().group(IronCoals.ITEM_GROUP));
 	}
 
 	@Override

@@ -23,6 +23,12 @@ public class IronCoals
 	public static final String MOD_ID = "ironcoals";
 	public static IronCoals instance;
 
+	   public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
+		   @Override
+	        public ItemStack createIcon() {
+	            return new ItemStack(ItemRegistration.IRONCOAL.get());
+	        }
+	    };
     public IronCoals() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
@@ -44,14 +50,4 @@ public class IronCoals
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
-	public static class CreativeItemGroup extends ItemGroup {
-		public static final CreativeItemGroup instance = new CreativeItemGroup(ItemGroup.GROUPS.length,"ironcoalstab");
-		private CreativeItemGroup(int index, String label) {
-			super(index, label);
-		}
-		@Override
-		public ItemStack createIcon() {
-			return new ItemStack(ItemRegistration.IRONCOAL.get());
-		}
-	}
 }
