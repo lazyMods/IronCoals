@@ -89,6 +89,9 @@ public class Recipes extends RecipeProvider {
 	        .setGroup("IronCoals")
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	        .build(consumer);
+	        
+	        
+	        /*
 	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.IRONCOAL.get(),9)
 	        .addIngredient(ItemRegistration.IRONCOALBLOCKITEM.get())
 	        .setGroup("IronCoals")
@@ -108,7 +111,7 @@ public class Recipes extends RecipeProvider {
 	        .addIngredient(ItemRegistration.EMERALDCOALBLOCKITEM.get())
 	        .setGroup("IronCoals")
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
-	        .build(consumer);
+	        .build(consumer);*/
 	        
 }
 	 }
