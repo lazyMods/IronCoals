@@ -1,16 +1,35 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "IronCoals",
-  "pattern": [
-    "aaa",
-    "aaa",
-    "aaa"
-  ],
-  "key": {
-    "a": {
+  "ingredients": [
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
+      "item": "ironcoals:iron_coal"
+    },
+    {
       "item": "ironcoals:iron_coal"
     }
-  },
+  ],
   "result": {
     "item": "ironcoals:iron_coal_block"
   }
