@@ -9,7 +9,7 @@ public class IronCoalBlock extends Block {
 
 	public IronCoalBlock() {
 		super(Properties.create(Material.ROCK).hardnessAndResistance(5.0F,
-				6.0F).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE))
+				6.0F).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).setRequiresTool())
 		;
 	}
 
