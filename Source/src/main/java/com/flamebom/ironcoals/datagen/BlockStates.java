@@ -21,6 +21,9 @@ public class BlockStates extends BlockStateProvider {
 	@Override
 	protected void registerStatesAndModels() {
 simpleBlock(BlockRegistration.IRONCOALBLOCK.get());
+simpleBlock(BlockRegistration.GOLDCOALBLOCK.get());
+simpleBlock(BlockRegistration.DIAMONDCOALBLOCK.get());
+simpleBlock(BlockRegistration.EMERALDCOALBLOCK.get());
 		
 	}
 }

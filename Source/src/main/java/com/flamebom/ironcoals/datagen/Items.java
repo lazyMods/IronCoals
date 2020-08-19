@@ -19,6 +19,12 @@ public class Items extends ItemModelProvider {
 	protected void registerModels() {
 		 withExistingParent("item/"+ ItemRegistration.IRONCOALBLOCKITEM.get().getRegistryName().getPath(),
 	                new ResourceLocation(IronCoals.MOD_ID, "block/iron_coal_block"));
+		 withExistingParent("item/"+ ItemRegistration.GOLDCOALBLOCKITEM.get().getRegistryName().getPath(),
+	                new ResourceLocation(IronCoals.MOD_ID, "block/gold_coal_block"));
+		 withExistingParent("item/"+ ItemRegistration.DIAMONDCOALBLOCKITEM.get().getRegistryName().getPath(),
+	                new ResourceLocation(IronCoals.MOD_ID, "block/diamond_coal_block"));
+		 withExistingParent("item/"+ ItemRegistration.EMERALDCOALBLOCKITEM.get().getRegistryName().getPath(),
+	                new ResourceLocation(IronCoals.MOD_ID, "block/emerald_coal_block"));
 	}
 
 }

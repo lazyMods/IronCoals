@@ -13,6 +13,10 @@ public class LootTables extends BaseLootTable {
 	@Override
 	protected void addTables() {
 lootTables.put(BlockRegistration.IRONCOALBLOCK.get(), createStandardTable("iron_coal_block", BlockRegistration.IRONCOALBLOCK.get()));
+lootTables.put(BlockRegistration.GOLDCOALBLOCK.get(), createStandardTable("gold_coal_block", BlockRegistration.GOLDCOALBLOCK.get()));
+lootTables.put(BlockRegistration.DIAMONDCOALBLOCK.get(), createStandardTable("diamond_coal_block", BlockRegistration.DIAMONDCOALBLOCK.get()));
+lootTables.put(BlockRegistration.EMERALDCOALBLOCK.get(), createStandardTable("emerald_coal_block", BlockRegistration.EMERALDCOALBLOCK.get()));
+
 
 	}
 }

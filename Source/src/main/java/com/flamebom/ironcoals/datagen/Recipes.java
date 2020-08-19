@@ -10,8 +10,10 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;
 import net.minecraft.data.ShapedRecipeBuilder;
+import net.minecraft.data.ShapelessRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 public class Recipes extends RecipeProvider {
 	public Recipes(DataGenerator generatorIn) {
@@ -67,13 +69,25 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
-	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOALBLOCKITEM.get())
-	         .patternLine("aaa")
-	         .patternLine("aaa")
-	         .patternLine("aaa")
-	         .key('a', ItemRegistration.IRONCOAL.get())
-	         .setGroup("IronCoals")
-	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
-	         .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.IRONCOALBLOCKITEM.get())
+	        .addIngredient(ItemRegistration.IRONCOAL.get(),9)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.GOLDCOALBLOCKITEM.get())
+	        .addIngredient(ItemRegistration.GOLDCOAL.get(),9)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.DIAMONDCOALBLOCKITEM.get())
+	        .addIngredient(ItemRegistration.DIAMONDCOAL.get(),9)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.EMERALDCOALBLOCKITEM.get())
+	        .addIngredient(ItemRegistration.EMERALDCOAL.get(),9)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
 }
 	 }
