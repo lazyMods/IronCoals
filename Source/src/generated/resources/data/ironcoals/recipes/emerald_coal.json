@@ -8,14 +8,14 @@
   ],
   "key": {
     "a": {
-      "item": "ironcoals:gold_coal"
+      "item": "ironcoals:diamond_coal"
     },
     "#": {
-      "tag": "forge:storage_blocks/diamond"
+      "tag": "forge:storage_blocks/emerald"
     }
   },
   "result": {
-    "item": "ironcoals:diamond_coal",
+    "item": "ironcoals:emerald_coal",
     "count": 8
   }
 }
