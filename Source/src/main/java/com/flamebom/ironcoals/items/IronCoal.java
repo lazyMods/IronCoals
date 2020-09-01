@@ -27,6 +27,7 @@ public class IronCoal extends Item {
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
+		
 		return Config.IRON_COAL_BURN.get();
 	}
 @Override
