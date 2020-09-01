@@ -7,10 +7,12 @@ import net.minecraftforge.fml.config.ModConfig;
 
 public class Config {
 	public static final String CATEGORY_COALS = "coals";
-
+	public static final String SUBCATEGORY_COALS = "coalburntime";
+	
 	public static ForgeConfigSpec SERVER_CONFIG;
 	public static ForgeConfigSpec CLIENT_CONFIG;
 
+	
 	public static ForgeConfigSpec.IntValue IRON_COAL_BURN;
 	public static ForgeConfigSpec.IntValue GOLD_COAL_BURN;
 	public static ForgeConfigSpec.IntValue DIAMOND_COAL_BURN;
@@ -21,8 +23,17 @@ public class Config {
         ForgeConfigSpec.Builder CLIENT_BUILDER = new ForgeConfigSpec.Builder();
         
         CLIENT_BUILDER.comment("Coals").push(CATEGORY_COALS);
+        CLIENT_BUILDER.pop();
         
-        IRON_COAL_BURN =  SERVER_BUILDER.comment("How long iron coal burns in ticks, default value is 2400")
+        setupCoals(SERVER_BUILDER,CLIENT_BUILDER);
+        SERVER_CONFIG = SERVER_BUILDER.build();
+        CLIENT_CONFIG = CLIENT_BUILDER.build();
+    
+     
+	}
+	private static void setupCoals(ForgeConfigSpec.Builder SERVER_BUILDER, ForgeConfigSpec.Builder CLIENT_BUILDER) {
+		SERVER_BUILDER.comment("Coal Burntime Settings").push(SUBCATEGORY_COALS);
+	    IRON_COAL_BURN =  SERVER_BUILDER.comment("How long iron coal burns in ticks, default value is 2400")
                 .defineInRange("ticks", 2400, 0, Integer.MAX_VALUE);
        GOLD_COAL_BURN =  SERVER_BUILDER.comment("How long gold coal burns in ticks, default value is 4800")
                 .defineInRange("ticks", 4800, 0, Integer.MAX_VALUE);
