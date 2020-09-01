@@ -27,7 +27,7 @@ public class Language extends LanguageProvider {
 		addItem(ItemRegistration.EMERALDCOAL, "Emerald Coal");
 		addItem(ItemRegistration.AEONCOAL, "Aeon Coal");
 		
-	add("message.ironcoal","Burn Time: 1.5x coal");
+	add("message.ironcoal","Burn Time: %sx coal");
 	add("message.ironcoalblock","Burn Time: 15.0x coal");
 	add("message.goldcoal","Burn Time: 3.0x coal");
 	add("message.goldcoalblock","Burn Time: 30.0x coal");
