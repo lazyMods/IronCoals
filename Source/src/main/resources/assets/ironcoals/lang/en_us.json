@@ -16,6 +16,6 @@
   "message.emeraldcoalblock": "Burn Time: 120.0x coal",
   "message.goldcoal": "Burn Time: 3.0x coal",
   "message.goldcoalblock": "Burn Time: 30.0x coal",
-  "message.ironcoal": "Burn Time: 1.5x coal",
+  "message.ironcoal": "Burn Time: %sx coal",
   "message.ironcoalblock": "Burn Time: 15.0x coal"
 }
