@@ -35,12 +35,6 @@ public class Config {
 		SERVER_BUILDER.comment("Coal Burntime Settings").push(SUBCATEGORY_COALS);
 	    IRON_COAL_BURN =  SERVER_BUILDER.comment("How long iron coal burns in ticks, default value is 2400")
                 .defineInRange("ticks", 2400, 0, Integer.MAX_VALUE);
-       GOLD_COAL_BURN =  SERVER_BUILDER.comment("How long gold coal burns in ticks, default value is 4800")
-                .defineInRange("ticks", 4800, 0, Integer.MAX_VALUE);
-        DIAMOND_COAL_BURN =  SERVER_BUILDER.comment("How long diamond coal burns in ticks, default value is 9600")
-                .defineInRange("ticks", 9600, 0, Integer.MAX_VALUE);
-        EMERALD_COAL_BURN =  SERVER_BUILDER.comment("How long emerald coal burns in ticks, default value is 19200")
-                .defineInRange("ticks", 19200, 0, Integer.MAX_VALUE);
         SERVER_BUILDER.pop();
 	}
 	@SubscribeEvent
