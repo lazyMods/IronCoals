@@ -34,7 +34,7 @@ public class Config {
 	private static void setupCoals(ForgeConfigSpec.Builder SERVER_BUILDER, ForgeConfigSpec.Builder CLIENT_BUILDER) {
 		SERVER_BUILDER.comment("Coal Burntime Settings").push(SUBCATEGORY_COALS);
 	    IRON_COAL_BURN =  SERVER_BUILDER.comment("How long iron coal burns in ticks, default value is 2400")
-                .defineInRange("ticks", 2400, 0, Integer.MAX_VALUE);
+                .defineInRange("ticks", 2400, 1, 2400);
         SERVER_BUILDER.pop();
 	}
 	@SubscribeEvent
