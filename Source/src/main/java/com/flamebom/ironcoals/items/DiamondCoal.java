@@ -5,6 +5,9 @@ package com.flamebom.ironcoals.items;
 import java.util.List;
 
 import com.flamebom.ironcoals.IronCoals;
+import com.flamebom.ironcoals.helpers.CoalHelper;
+import com.flamebom.ironcoals.setup.Config;
+
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -24,11 +27,11 @@ public class DiamondCoal extends Item {
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
-		return 9600;
+		return Config.DIAMOND_COAL_BURN.get();
 	}
 @Override
 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add((new TranslationTextComponent("message.diamondcoal")).mergeStyle(TextFormatting.AQUA));
+	tooltip.add(new TranslationTextComponent("message.diamondcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.DIAMOND_COAL_BURN.get()))).mergeStyle(TextFormatting.AQUA));
 }
 }
 	

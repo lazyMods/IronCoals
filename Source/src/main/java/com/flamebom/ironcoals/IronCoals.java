@@ -44,7 +44,6 @@ public class IronCoals {
 	}
 
 
-
 	private void setup(final FMLCommonSetupEvent event) {
 	}
 
