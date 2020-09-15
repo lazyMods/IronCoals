@@ -41,7 +41,9 @@ public class Config {
                 .defineInRange("ticks", 9600, 1, 19200);
 	   EMERALD_COAL_BURN =  SERVER_BUILDER.comment("How long iron coal burns in ticks, default value is 19200")
                 .defineInRange("ticks", 19200, 1, 38400);
+	   
         SERVER_BUILDER.pop();
+     
 	}
 	@SubscribeEvent
     public static void onLoad(final ModConfig.Loading configEvent) {

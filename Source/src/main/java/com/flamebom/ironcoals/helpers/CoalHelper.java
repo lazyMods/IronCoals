@@ -9,4 +9,5 @@ public class CoalHelper {
 		multiplier= (double)multiplier /10;
 		return multiplier;
 	}
+
 }

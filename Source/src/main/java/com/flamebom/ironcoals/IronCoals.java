@@ -45,6 +45,10 @@ public class IronCoals {
 
 
 	private void setup(final FMLCommonSetupEvent event) {
+		LOGGER.debug(Config.IRON_COAL_BURN.get());
+		LOGGER.debug(Config.GOLD_COAL_BURN.get());
+		LOGGER.debug(Config.DIAMOND_COAL_BURN.get());
+		LOGGER.debug(Config.EMERALD_COAL_BURN.get());
 	}
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
@@ -55,5 +59,6 @@ public class IronCoals {
 	public void onServerStarting(FMLServerStartingEvent event) {
 		// do something when the server starts
 		LOGGER.info("HELLO from server starting");
+	
 	}
 }
