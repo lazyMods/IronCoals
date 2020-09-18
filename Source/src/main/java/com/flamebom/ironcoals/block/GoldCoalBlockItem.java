@@ -26,11 +26,11 @@ public class GoldCoalBlockItem extends BlockItem {
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
-		return (Config.GOLD_COAL_BURN.get()*9);
+		return (Config.GOLD_COAL_BURN.get()*10);
 	}
 @Override
 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.goldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()*9))).mergeStyle(TextFormatting.GOLD));
+	tooltip.add(new TranslationTextComponent("message.goldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()*10))).mergeStyle(TextFormatting.GOLD));
 }
 
 }

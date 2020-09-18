@@ -26,11 +26,11 @@ public class EmeraldCoalBlockItem extends BlockItem {
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
-		return (Config.EMERALD_COAL_BURN.get()*9);
+		return (Config.EMERALD_COAL_BURN.get()*10);
 	}
 @Override
 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.emeraldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.EMERALD_COAL_BURN.get()*9))).mergeStyle(TextFormatting.GREEN));
+	tooltip.add(new TranslationTextComponent("message.emeraldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.EMERALD_COAL_BURN.get()*10))).mergeStyle(TextFormatting.GREEN));
 }
 
 }
