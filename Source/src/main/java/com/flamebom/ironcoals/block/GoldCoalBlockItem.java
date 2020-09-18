@@ -3,7 +3,9 @@ package com.flamebom.ironcoals.block;
 import java.util.List;
 
 import com.flamebom.ironcoals.IronCoals;
+import com.flamebom.ironcoals.helpers.CoalHelper;
 import com.flamebom.ironcoals.setup.BlockRegistration;
+import com.flamebom.ironcoals.setup.Config;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.BlockItem;
@@ -24,11 +26,11 @@ public class GoldCoalBlockItem extends BlockItem {
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
-		return 48000;
+		return (Config.GOLD_COAL_BURN.get()*9);
 	}
 @Override
 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add((new TranslationTextComponent("message.goldcoalblock")).mergeStyle(TextFormatting.GOLD));
+	tooltip.add(new TranslationTextComponent("message.goldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()*9))).mergeStyle(TextFormatting.GOLD));
 }
 
 }
