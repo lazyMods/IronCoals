@@ -28,13 +28,13 @@ public class Language extends LanguageProvider {
 		addItem(ItemRegistration.AEONCOAL, "Aeon Coal");
 		
 	add("message.ironcoal","Burn Time: %sx coal");
-	add("message.ironcoalblock","Burn Time: 15.0x coal");
-	add("message.goldcoal","Burn Time: 3.0x coal");
-	add("message.goldcoalblock","Burn Time: 30.0x coal");
-	add("message.diamondcoal","Burn Time: 6.0x coal");
-	add("message.diamondcoalblock","Burn Time: 60.0x coal");
-	add("message.emeraldcoal","Burn Time: 12.0x coal");
-	add("message.emeraldcoalblock","Burn Time: 120.0x coal");
+	add("message.ironcoalblock","Burn Time: %sx coal");
+	add("message.goldcoal","Burn Time: %sx coal");
+	add("message.goldcoalblock","Burn Time: %sx coal");
+	add("message.diamondcoal","Burn Time: %sx coal");
+	add("message.diamondcoalblock","Burn Time: %sx coal");
+	add("message.emeraldcoal","Burn Time: %sx coal");
+	add("message.emeraldcoalblock","Burn Time: %sx coal");
 	add("message.aeoncoal","Burn Time: Literally forever");
 	
 		   add("itemGroup.ironcoals", "Iron Coals");

@@ -31,6 +31,7 @@ public class GoldCoal extends Item {
 	}
 @Override
 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	
 	tooltip.add(new TranslationTextComponent("message.goldcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()))).mergeStyle(TextFormatting.GOLD));
 }
 }

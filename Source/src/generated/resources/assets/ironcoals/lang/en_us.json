@@ -10,12 +10,12 @@
   "item.ironcoals.iron_coal": "Iron Coal",
   "itemGroup.ironcoals": "Iron Coals",
   "message.aeoncoal": "Burn Time: Literally forever",
-  "message.diamondcoal": "Burn Time: 6.0x coal",
-  "message.diamondcoalblock": "Burn Time: 60.0x coal",
-  "message.emeraldcoal": "Burn Time: 12.0x coal",
-  "message.emeraldcoalblock": "Burn Time: 120.0x coal",
-  "message.goldcoal": "Burn Time: 3.0x coal",
-  "message.goldcoalblock": "Burn Time: 30.0x coal",
-  "message.ironcoal": "Burn Time: 1.5x coal",
-  "message.ironcoalblock": "Burn Time: 15.0x coal"
+  "message.diamondcoal": "Burn Time: %sx coal",
+  "message.diamondcoalblock": "Burn Time: %sx coal",
+  "message.emeraldcoal": "Burn Time: %sx coal",
+  "message.emeraldcoalblock": "Burn Time: %sx coal",
+  "message.goldcoal": "Burn Time: %sx coal",
+  "message.goldcoalblock": "Burn Time: %sx coal",
+  "message.ironcoal": "Burn Time: %sx coal",
+  "message.ironcoalblock": "Burn Time: %sx coal"
 }
