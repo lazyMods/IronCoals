@@ -89,8 +89,16 @@ public class Recipes extends RecipeProvider {
 	        .setGroup("IronCoals")
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	        .build(consumer);
-	        
-	        
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.BASECOALCHUNK.get(),8)
+	        .addIngredient(ItemTags.COALS)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(Items.COAL.getItem())
+	        .addIngredient(ItemRegistration.BASECOALCHUNK.get(),8)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
 	        /*
 	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.IRONCOAL.get(),9)
 	        .addIngredient(ItemRegistration.IRONCOALBLOCKITEM.get())

@@ -21,12 +21,14 @@ public class Language extends LanguageProvider {
 		addBlock(BlockRegistration.DIAMONDCOALBLOCK, "Diamond Coal Block");
 		addBlock(BlockRegistration.EMERALDCOALBLOCK, "Emerald Coal Block");
 	
+		addItem(ItemRegistration.BASECOALCHUNK, "Coal Chunk");
 		addItem(ItemRegistration.IRONCOAL, "Iron Coal");
 		addItem(ItemRegistration.GOLDCOAL, "Gold Coal");
 		addItem(ItemRegistration.DIAMONDCOAL, "Diamond Coal");
 		addItem(ItemRegistration.EMERALDCOAL, "Emerald Coal");
 		addItem(ItemRegistration.AEONCOAL, "Aeon Coal");
 		
+		add("message.basecoalchunk","Burns one item");
 	add("message.ironcoal","Burn Time: %sx coal");
 	add("message.ironcoalblock","Burn Time: %sx coal");
 	add("message.goldcoal","Burn Time: %sx coal");

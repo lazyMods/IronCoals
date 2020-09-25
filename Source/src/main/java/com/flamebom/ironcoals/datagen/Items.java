@@ -25,6 +25,8 @@ public class Items extends ItemModelProvider {
 	                new ResourceLocation(IronCoals.MOD_ID, "block/diamond_coal_block"));
 		 withExistingParent("item/"+ ItemRegistration.EMERALDCOALBLOCKITEM.get().getRegistryName().getPath(),
 	                new ResourceLocation(IronCoals.MOD_ID, "block/emerald_coal_block"));
+		 withExistingParent("item/"+ ItemRegistration.BASECOALCHUNK.get().getRegistryName().getPath(),
+	                new ResourceLocation(IronCoals.MOD_ID, "item/base_coal_chunk"));
 	}
 
 }
