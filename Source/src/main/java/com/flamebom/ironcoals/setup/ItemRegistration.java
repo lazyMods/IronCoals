@@ -14,6 +14,7 @@ import com.flamebom.ironcoals.items.DiamondCoal;
 import com.flamebom.ironcoals.items.EmeraldCoal;
 import com.flamebom.ironcoals.items.GoldCoal;
 import com.flamebom.ironcoals.items.IronCoal;
+import com.flamebom.ironcoals.items.IronCoalChunk;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -30,6 +31,7 @@ public class ItemRegistration {
 	public static final RegistryObject<Item> EMERALDCOAL = ITEMS.register("emerald_coal", EmeraldCoal::new);
 	public static final RegistryObject<Item> AEONCOAL = ITEMS.register("aeon_coal", AeonCoal::new);
 	public static final RegistryObject<Item> BASECOALCHUNK = ITEMS.register("base_coal_chunk", BaseCoalChunk::new);
+	public static final RegistryObject<Item> IRONCOALCHUNK = ITEMS.register("iron_coal_chunk", IronCoalChunk::new);
 	
 	public static final RegistryObject<Item> IRONCOALBLOCKITEM = ITEMS.register("iron_coal_block",IronCoalBlockItem::new);
 	public static final RegistryObject<Item> GOLDCOALBLOCKITEM = ITEMS.register("gold_coal_block",GoldCoalBlockItem::new);

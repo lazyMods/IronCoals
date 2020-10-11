@@ -21,7 +21,7 @@ public class Recipes extends RecipeProvider {
 	}
 	 @Override
 	    protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
-	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOAL.get(),8)
+	     /*   ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOAL.get(),8)
 	         .patternLine("aaa")
 	         .patternLine("a#a")
 	         .patternLine("aaa")
@@ -30,7 +30,7 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	      
-	         .build(consumer);
+	         .build(consumer);*/
 	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.GOLDCOAL.get(),8)
 	         .patternLine("aaa")
 	         .patternLine("a#a")
@@ -96,6 +96,16 @@ public class Recipes extends RecipeProvider {
 	        .build(consumer);
 	        ShapelessRecipeBuilder.shapelessRecipe(Items.COAL.getItem())
 	        .addIngredient(ItemRegistration.BASECOALCHUNK.get(),8)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.IRONCOAL.get())
+	        .addIngredient(ItemRegistration.IRONCOALCHUNK.get(),8)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.IRONCOALCHUNK.get(),8)
+	        .addIngredient(ItemRegistration.IRONCOALCHUNK.get())
 	        .setGroup("IronCoals")
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	        .build(consumer);
