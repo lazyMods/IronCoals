@@ -9,6 +9,7 @@
   "item.ironcoals.emerald_coal": "Emerald Coal",
   "item.ironcoals.gold_coal": "Gold Coal",
   "item.ironcoals.iron_coal": "Iron Coal",
+  "item.ironcoals.iron_coal_chunk": "Iron Coal Chunk",
   "itemGroup.ironcoals": "Iron Coals",
   "message.aeoncoal": "Burn Time: Literally forever",
   "message.basecoalchunk": "Burns one item",
@@ -19,5 +20,6 @@
   "message.goldcoal": "Burn Time: %sx coal",
   "message.goldcoalblock": "Burn Time: %sx coal",
   "message.ironcoal": "Burn Time: %sx coal",
-  "message.ironcoalblock": "Burn Time: %sx coal"
+  "message.ironcoalblock": "Burn Time: %sx coal",
+  "message.ironcoalchunk": "Burn Time: %sx coal"
 }
