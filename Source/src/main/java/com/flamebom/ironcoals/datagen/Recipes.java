@@ -13,7 +13,6 @@ import net.minecraft.data.ShapedRecipeBuilder;
 import net.minecraft.data.ShapelessRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 public class Recipes extends RecipeProvider {
 	public Recipes(DataGenerator generatorIn) {
@@ -21,7 +20,8 @@ public class Recipes extends RecipeProvider {
 	}
 	 @Override
 	    protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
-	      ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOAL.get(),8)
+	   // Recipes from that create the same item don't work so you have to comment them out  
+		 ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOAL.get(),8)
 	         .patternLine("aaa")
 	         .patternLine("a#a")
 	         .patternLine("aaa")
@@ -40,6 +40,7 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
+	         
 	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.DIAMONDCOAL.get(),8)
 	         .patternLine("aaa")
 	         .patternLine("a#a")
@@ -100,7 +101,18 @@ public class Recipes extends RecipeProvider {
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	        .build(consumer);
 	        
-	        /*
+	        
+	       /* 
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.GOLDCOAL.get())
+	        .addIngredient(ItemRegistration.GOLDCOALCHUNK.get(),8)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.GOLDCOALCHUNK.get(),8)
+	        .addIngredient(ItemRegistration.GOLDCOAL.get())
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);	
 	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.IRONCOAL.get())
 	        .addIngredient(ItemRegistration.IRONCOALCHUNK.get(),8)
 	        .setGroup("IronCoals")

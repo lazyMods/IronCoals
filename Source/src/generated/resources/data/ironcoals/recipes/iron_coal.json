@@ -1,33 +1,21 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "group": "IronCoals",
-  "ingredients": [
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    },
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    },
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    },
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    },
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    },
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    },
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    },
-    {
-      "item": "ironcoals:iron_coal_chunk"
-    }
+  "pattern": [
+    "aaa",
+    "a#a",
+    "aaa"
   ],
+  "key": {
+    "a": {
+      "tag": "minecraft:coals"
+    },
+    "#": {
+      "tag": "forge:storage_blocks/iron"
+    }
+  },
   "result": {
-    "item": "ironcoals:iron_coal"
+    "item": "ironcoals:iron_coal",
+    "count": 8
   }
 }
