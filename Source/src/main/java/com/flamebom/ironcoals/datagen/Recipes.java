@@ -40,7 +40,7 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
-	         
+	/*     
 	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.DIAMONDCOAL.get(),8)
 	         .patternLine("aaa")
 	         .patternLine("a#a")
@@ -59,6 +59,7 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
+	        */
 	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.AEONCOAL.get())
 	         .patternLine("aba")
 	         .patternLine("x#x")
@@ -101,7 +102,26 @@ public class Recipes extends RecipeProvider {
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	        .build(consumer);
 	        
-	        
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.DIAMONDCOAL.get())
+	        .addIngredient(ItemRegistration.DIAMONDCOALCHUNK.get(),8)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.DIAMONDCOALCHUNK.get(),8)
+	        .addIngredient(ItemRegistration.DIAMONDCOAL.get())
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);	
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.EMERALDCOAL.get())
+	        .addIngredient(ItemRegistration.EMERALDCOALCHUNK.get(),8)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.EMERALDCOALCHUNK.get(),8)
+	        .addIngredient(ItemRegistration.EMERALDCOAL.get())
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);	
 	       /* 
 	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.GOLDCOAL.get())
 	        .addIngredient(ItemRegistration.GOLDCOALCHUNK.get(),8)

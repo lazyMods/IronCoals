@@ -25,11 +25,11 @@ public class Items extends ItemModelProvider {
 	                new ResourceLocation(IronCoals.MOD_ID, "block/diamond_coal_block"));
 		 withExistingParent("item/"+ ItemRegistration.EMERALDCOALBLOCKITEM.get().getRegistryName().getPath(),
 	                new ResourceLocation(IronCoals.MOD_ID, "block/emerald_coal_block"));
-		 withExistingParent("item/"+ ItemRegistration.BASECOALCHUNK.get().getRegistryName().getPath(),
-	                new ResourceLocation(IronCoals.MOD_ID, "item/base_coal_chunk"));
-		 withExistingParent("item/"+ ItemRegistration.IRONCOALCHUNK.get().getRegistryName().getPath(),
-	                new ResourceLocation(IronCoals.MOD_ID, "item/iron_coal_chunk"));
-		 
+singleTexture(ItemRegistration.BASECOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.BASECOALCHUNK.get().getRegistryName().getPath()));
+singleTexture(ItemRegistration.IRONCOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.IRONCOALCHUNK.get().getRegistryName().getPath()));
+singleTexture(ItemRegistration.GOLDCOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.GOLDCOALCHUNK.get().getRegistryName().getPath()));
+singleTexture(ItemRegistration.DIAMONDCOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.DIAMONDCOALCHUNK.get().getRegistryName().getPath()));
+singleTexture(ItemRegistration.EMERALDCOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.EMERALDCOALCHUNK.get().getRegistryName().getPath()));	
 	}
 
 }

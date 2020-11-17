@@ -3,11 +3,11 @@
   "group": "IronCoals",
   "ingredients": [
     {
-      "item": "ironcoals:gold_coal"
+      "item": "ironcoals:emerald_coal"
     }
   ],
   "result": {
-    "item": "ironcoals:gold_coal_chunk",
+    "item": "ironcoals:emerald_coal_chunk",
     "count": 8
   }
 }

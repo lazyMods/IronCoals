@@ -27,7 +27,9 @@ public class Language extends LanguageProvider {
 		addItem(ItemRegistration.GOLDCOAL, "Gold Coal");
 		addItem(ItemRegistration.GOLDCOALCHUNK, "Gold Coal Chunk");
 		addItem(ItemRegistration.DIAMONDCOAL, "Diamond Coal");
+		addItem(ItemRegistration.DIAMONDCOALCHUNK, "Diamond Coal Chunk");
 		addItem(ItemRegistration.EMERALDCOAL, "Emerald Coal");
+		addItem(ItemRegistration.EMERALDCOALCHUNK, "Emerald Coal Chunk");
 		addItem(ItemRegistration.AEONCOAL, "Aeon Coal");
 		
 		add("message.basecoalchunk","Burns one item");
@@ -39,8 +41,10 @@ public class Language extends LanguageProvider {
 	add("message.goldcoalblock","Burn Time: %sx coal");
 	add("message.diamondcoal","Burn Time: %sx coal");
 	add("message.diamondcoalblock","Burn Time: %sx coal");
+	add("message.diamondcoalchunk","Burn Time: %sx coal");
 	add("message.emeraldcoal","Burn Time: %sx coal");
 	add("message.emeraldcoalblock","Burn Time: %sx coal");
+	add("message.emeraldcoalchunk","Burn Time: %sx coal");
 	add("message.aeoncoal","Burn Time: Literally forever");
 	
 		   add("itemGroup.ironcoals", "Iron Coals");

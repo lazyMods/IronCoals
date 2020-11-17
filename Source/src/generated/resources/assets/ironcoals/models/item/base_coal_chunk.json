@@ -1,3 +1,6 @@
 {
-  "parent": "ironcoals:item/base_coal_chunk"
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ironcoals:item/base_coal_chunk"
+  }
 }

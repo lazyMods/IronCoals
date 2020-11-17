@@ -11,7 +11,9 @@ import com.flamebom.ironcoals.block.IronCoalBlockItem;
 import com.flamebom.ironcoals.items.AeonCoal;
 import com.flamebom.ironcoals.items.BaseCoalChunk;
 import com.flamebom.ironcoals.items.DiamondCoal;
+import com.flamebom.ironcoals.items.DiamondCoalChunk;
 import com.flamebom.ironcoals.items.EmeraldCoal;
+import com.flamebom.ironcoals.items.EmeraldCoalChunk;
 import com.flamebom.ironcoals.items.GoldCoal;
 import com.flamebom.ironcoals.items.GoldCoalChunk;
 import com.flamebom.ironcoals.items.IronCoal;
@@ -31,9 +33,13 @@ public class ItemRegistration {
 	public static final RegistryObject<Item> DIAMONDCOAL = ITEMS.register("diamond_coal", DiamondCoal::new);
 	public static final RegistryObject<Item> EMERALDCOAL = ITEMS.register("emerald_coal", EmeraldCoal::new);
 	public static final RegistryObject<Item> AEONCOAL = ITEMS.register("aeon_coal", AeonCoal::new);
+	
+	
 	public static final RegistryObject<Item> BASECOALCHUNK = ITEMS.register("base_coal_chunk", BaseCoalChunk::new);
 	public static final RegistryObject<Item> IRONCOALCHUNK = ITEMS.register("iron_coal_chunk", IronCoalChunk::new);
 	public static final RegistryObject<Item> GOLDCOALCHUNK = ITEMS.register("gold_coal_chunk", GoldCoalChunk::new);
+	public static final RegistryObject<Item> DIAMONDCOALCHUNK = ITEMS.register("diamond_coal_chunk", DiamondCoalChunk::new);
+	public static final RegistryObject<Item> EMERALDCOALCHUNK = ITEMS.register("emerald_coal_chunk", EmeraldCoalChunk::new);
 	
 	public static final RegistryObject<Item> IRONCOALBLOCKITEM = ITEMS.register("iron_coal_block",IronCoalBlockItem::new);
 	public static final RegistryObject<Item> GOLDCOALBLOCKITEM = ITEMS.register("gold_coal_block",GoldCoalBlockItem::new);
