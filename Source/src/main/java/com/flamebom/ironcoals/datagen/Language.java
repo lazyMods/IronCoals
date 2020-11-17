@@ -21,6 +21,7 @@ public class Language extends LanguageProvider {
 		addBlock(BlockRegistration.DIAMONDCOALBLOCK, "Diamond Coal Block");
 		addBlock(BlockRegistration.EMERALDCOALBLOCK, "Emerald Coal Block");
 	
+		addItem(ItemRegistration.CHARCOALCHUNK, "Charcoal Chunk");
 		addItem(ItemRegistration.BASECOALCHUNK, "Coal Chunk");
 		addItem(ItemRegistration.IRONCOAL, "Iron Coal");
 		addItem(ItemRegistration.IRONCOALCHUNK, "Iron Coal Chunk");
@@ -32,7 +33,8 @@ public class Language extends LanguageProvider {
 		addItem(ItemRegistration.EMERALDCOALCHUNK, "Emerald Coal Chunk");
 		addItem(ItemRegistration.AEONCOAL, "Aeon Coal");
 		
-		add("message.basecoalchunk","Burns one item");
+		add("message.charcoalchunk","Burns 1 item");
+		add("message.basecoalchunk","Burns 1 item");
 	add("message.ironcoal","Burn Time: %sx coal");
 	add("message.ironcoalchunk","Burn Time: %sx coal");
 	add("message.ironcoalblock","Burn Time: %sx coal");

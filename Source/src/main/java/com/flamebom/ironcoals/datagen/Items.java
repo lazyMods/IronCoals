@@ -25,6 +25,8 @@ public class Items extends ItemModelProvider {
 	                new ResourceLocation(IronCoals.MOD_ID, "block/diamond_coal_block"));
 		 withExistingParent("item/"+ ItemRegistration.EMERALDCOALBLOCKITEM.get().getRegistryName().getPath(),
 	                new ResourceLocation(IronCoals.MOD_ID, "block/emerald_coal_block"));
+
+singleTexture(ItemRegistration.CHARCOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.CHARCOALCHUNK.get().getRegistryName().getPath()));
 singleTexture(ItemRegistration.BASECOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.BASECOALCHUNK.get().getRegistryName().getPath()));
 singleTexture(ItemRegistration.IRONCOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.IRONCOALCHUNK.get().getRegistryName().getPath()));
 singleTexture(ItemRegistration.GOLDCOALCHUNK.get().getRegistryName().getPath(), mcLoc("item/handheld"), "layer0", modLoc("item/" + ItemRegistration.GOLDCOALCHUNK.get().getRegistryName().getPath()));

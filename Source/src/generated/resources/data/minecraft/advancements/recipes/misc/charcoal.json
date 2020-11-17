@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "ironcoals:emerald_coal_chunk"
+      "minecraft:charcoal"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "ironcoals:emerald_coal_chunk"
+        "recipe": "minecraft:charcoal"
       }
     }
   },

@@ -40,7 +40,7 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
-	/*     
+	 
 	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.DIAMONDCOAL.get(),8)
 	         .patternLine("aaa")
 	         .patternLine("a#a")
@@ -59,7 +59,7 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
-	        */
+	        
 	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.AEONCOAL.get())
 	         .patternLine("aba")
 	         .patternLine("x#x")
@@ -101,7 +101,19 @@ public class Recipes extends RecipeProvider {
 	        .setGroup("IronCoals")
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.CHARCOALCHUNK.get(),8)
+	        .addIngredient(Items.CHARCOAL)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
+	        ShapelessRecipeBuilder.shapelessRecipe(Items.CHARCOAL.getItem())
+	        .addIngredient(ItemRegistration.CHARCOALCHUNK.get(),8)
+	        .setGroup("IronCoals")
+	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	        .build(consumer);
 	        
+	        
+	       /* 
 	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.DIAMONDCOAL.get())
 	        .addIngredient(ItemRegistration.DIAMONDCOALCHUNK.get(),8)
 	        .setGroup("IronCoals")
@@ -122,7 +134,7 @@ public class Recipes extends RecipeProvider {
 	        .setGroup("IronCoals")
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	        .build(consumer);	
-	       /* 
+	       
 	        ShapelessRecipeBuilder.shapelessRecipe(ItemRegistration.GOLDCOAL.get())
 	        .addIngredient(ItemRegistration.GOLDCOALCHUNK.get(),8)
 	        .setGroup("IronCoals")
