@@ -20,6 +20,7 @@ public class Language extends LanguageProvider {
 		addBlock(BlockRegistration.GOLDCOALBLOCK, "Gold Coal Block");
 		addBlock(BlockRegistration.DIAMONDCOALBLOCK, "Diamond Coal Block");
 		addBlock(BlockRegistration.EMERALDCOALBLOCK, "Emerald Coal Block");
+		addBlock(BlockRegistration.IRONCOALTORCH, "Iron Coal Torch");
 	
 		addItem(ItemRegistration.CHARCOALCHUNK, "Charcoal Chunk");
 		addItem(ItemRegistration.BASECOALCHUNK, "Coal Chunk");

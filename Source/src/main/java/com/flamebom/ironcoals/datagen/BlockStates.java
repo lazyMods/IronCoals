@@ -24,6 +24,7 @@ simpleBlock(BlockRegistration.IRONCOALBLOCK.get());
 simpleBlock(BlockRegistration.GOLDCOALBLOCK.get());
 simpleBlock(BlockRegistration.DIAMONDCOALBLOCK.get());
 simpleBlock(BlockRegistration.EMERALDCOALBLOCK.get());
+simpleBlock(BlockRegistration.IRONCOALTORCH.get());
 		
 	}
 }
