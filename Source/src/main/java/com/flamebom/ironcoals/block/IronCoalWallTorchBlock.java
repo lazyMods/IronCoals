@@ -1,11 +1,10 @@
 package com.flamebom.ironcoals.block;
 
 import java.util.Random;
-import net.minecraft.block.Block;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.WallTorchBlock;
-import net.minecraft.block.AbstractBlock.Properties;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

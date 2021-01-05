@@ -14,7 +14,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class IronCoalTorchBlock extends TorchBlock {
 
-
     public IronCoalTorchBlock()
     {
     	super(Properties.from(Blocks.TORCH), ParticleTypes.SMOKE);
