@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/template_torch",
   "textures": {
-    "all": "ironcoals:block/iron_coal_torch"
+    "torch": "ironcoals:block/iron_coal_torch"
   }
 }
