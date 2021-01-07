@@ -8,7 +8,6 @@ import com.flamebom.ironcoals.block.DiamondCoalBlockItem;
 import com.flamebom.ironcoals.block.EmeraldCoalBlockItem;
 import com.flamebom.ironcoals.block.GoldCoalBlockItem;
 import com.flamebom.ironcoals.block.IronCoalBlockItem;
-import com.flamebom.ironcoals.block.IronCoalTorchBlock;
 import com.flamebom.ironcoals.block.IronCoalTorchBlockItem;
 import com.flamebom.ironcoals.items.AeonCoal;
 import com.flamebom.ironcoals.items.BaseCoalChunk;

@@ -14,11 +14,13 @@ import net.minecraft.data.ShapelessRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;
 import net.minecraft.item.Items;
+
 public class Recipes extends RecipeProvider {
 	public Recipes(DataGenerator generatorIn) {
 		super(generatorIn);
 	}
-	 @Override
+
+	@Override
 	    protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
 	   // Recipes from that create the same item don't work so you have to comment them out  
 		 ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOAL.get(),8)
@@ -30,7 +32,14 @@ public class Recipes extends RecipeProvider {
 	         .setGroup("IronCoals")
 	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
 	         .build(consumer);
-	         
+	         ShapedRecipeBuilder.shapedRecipe(ItemRegistration.IRONCOALTORCH.get(),4)
+	         .patternLine("a")
+	         .patternLine("x")
+	         .key('a', ItemRegistration.IRONCOALCHUNK.get())
+	         .key('x',Items.STICK)
+	         .setGroup("IronCoals")
+	         .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
+	         .build(consumer);
 	        ShapedRecipeBuilder.shapedRecipe(ItemRegistration.GOLDCOAL.get(),8)
 	         .patternLine("aaa")
 	         .patternLine("a#a")
@@ -177,4 +186,4 @@ public class Recipes extends RecipeProvider {
 	        .build(consumer);*/
 	        
 }
-	 }
+}
