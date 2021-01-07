@@ -21,6 +21,6 @@ public class BlockRegistration {
 	public static final RegistryObject<Block> DIAMONDCOALBLOCK = BLOCKS.register("diamond_coal_block", DiamondCoalBlock::new);
 	public static final RegistryObject<Block> EMERALDCOALBLOCK = BLOCKS.register("emerald_coal_block", EmeraldCoalBlock::new);
 	public static final RegistryObject<Block> IRONCOALTORCH = BLOCKS.register("iron_coal_torch", IronCoalTorchBlock::new);
-	public static final RegistryObject<Block> IRONCOALWALLTORCH = BLOCKS.register("iron_coal__wall_torch", IronCoalWallTorchBlock::new);
+	public static final RegistryObject<Block> IRONCOALWALLTORCH = BLOCKS.register("iron_coal_wall_torch", IronCoalWallTorchBlock::new);
 			
 }
