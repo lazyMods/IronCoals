@@ -52,7 +52,6 @@ public class IronCoals {
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALTORCH.get(), RenderType.getCutout());
-		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), RenderType.getCutout());
 	}
 
 	// You can use SubscribeEvent and let the Event Bus discover methods to call
