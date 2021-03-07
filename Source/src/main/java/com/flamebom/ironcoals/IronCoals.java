@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import com.flamebom.ironcoals.setup.Config;
 import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.ItemRegistration;
+import com.flamebom.ironcoals.setup.ParticleRegistration;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -42,6 +43,7 @@ public class IronCoals {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 		ItemRegistration.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		BlockRegistration.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+		ParticleRegistration.PARTICLES.register(FMLJavaModLoadingContext.get().getModEventBus());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
