@@ -14,10 +14,10 @@ public class TorchParticleType extends BasicParticleType {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public static class LightParticleFactory implements IParticleFactory<BasicParticleType> {
+    public static class TorchParticleFactory implements IParticleFactory<BasicParticleType> {
         private final IAnimatedSprite spriteSet;
 
-        public LightParticleFactory(IAnimatedSprite p_i50522_1_) {
+        public TorchParticleFactory(IAnimatedSprite p_i50522_1_) {
             this.spriteSet = p_i50522_1_;
         }
 
