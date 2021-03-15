@@ -23,4 +23,4 @@ public class ParticleRegistration {
 		Minecraft.getInstance().particles.registerFactory(ParticleRegistration.TORCHPARTICLE.get(),
 				new TorchParticleFactory(null));
 	}
-}	
+}
