@@ -1,5 +1,7 @@
 package com.flamebom.ironcoals.block;
 
+import com.flamebom.ironcoals.setup.ParticleRegistration;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.TorchBlock;
@@ -10,7 +12,7 @@ import net.minecraft.world.IBlockReader;
 public class IronCoalTorchBlock extends TorchBlock {
 
 	public IronCoalTorchBlock() {
-		super(Properties.from(Blocks.TORCH),ParticleTypes.END_ROD);
+		super(Properties.from(Blocks.TORCH),ParticleRegistration.TORCHPARTICLE.get());
 	}
 
 	@Override
