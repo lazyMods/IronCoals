@@ -41,12 +41,12 @@ public class IronCoals {
 		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+		ParticleRegistration.PARTICLES.register(FMLJavaModLoadingContext.get().getModEventBus());
 		ItemRegistration.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		BlockRegistration.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		ParticleRegistration.PARTICLES.register(FMLJavaModLoadingContext.get().getModEventBus());
+
 		MinecraftForge.EVENT_BUS.register(this);
 	}
-
 
 	private void setup(final FMLCommonSetupEvent event) {
 
@@ -62,6 +62,6 @@ public class IronCoals {
 	public void onServerStarting(FMLServerStartingEvent event) {
 		// do something when the server starts
 		LOGGER.info("HELLO from server starting");
-	
+
 	}
 }
