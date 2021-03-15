@@ -18,9 +18,9 @@ public class ParticleRegistration {
 	public static final RegistryObject<TorchParticleType> TORCHPARTICLE = PARTICLES.register("torch_particle",
 			TorchParticleType::new);
 
-	@SubscribeEvent
+	@SubscribeEvent	
 	public static void registerFactories(ParticleFactoryRegisterEvent evt) {
 		Minecraft.getInstance().particles.registerFactory(ParticleRegistration.TORCHPARTICLE.get(),
-				new TorchParticleFactory(null));
+				TorchParticleFactory::new);
 	}
 }
