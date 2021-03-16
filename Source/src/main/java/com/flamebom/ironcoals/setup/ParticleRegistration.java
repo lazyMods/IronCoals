@@ -21,6 +21,6 @@ public class ParticleRegistration {
 	@SubscribeEvent	
 	public static void registerFactories(ParticleFactoryRegisterEvent evt) {
 		Minecraft.getInstance().particles.registerFactory(ParticleRegistration.TORCHPARTICLE.get(),
-				TorchParticleFactory::new);
+				new TorchParticleFactory());
 	}
 }
