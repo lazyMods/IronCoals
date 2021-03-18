@@ -40,7 +40,7 @@ public class TorchParticle extends SpriteTexturedParticle {
         } else {
             this.move(this.motionX, this.motionY, this.motionZ);
             this.motionX *= 0.99D;
-            this.motionY *= 0.99D;
+            this.motionY *=1.05D;
             this.motionZ *= 0.99D;
         }
         
