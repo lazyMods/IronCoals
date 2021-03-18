@@ -21,7 +21,7 @@ public class TorchParticle extends SpriteTexturedParticle {
     }
 
     public IParticleRenderType getRenderType() {
-        return IParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
+        return IParticleRenderType.PARTICLE_SHEET_LIT;
     }
 
     public void move(double x, double y, double z) {
