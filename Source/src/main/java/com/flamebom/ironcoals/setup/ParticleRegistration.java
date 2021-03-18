@@ -6,6 +6,7 @@ import com.flamebom.ironcoals.particles.TorchParticleType;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.particles.ParticleType;
+import net.minecraft.world.BossInfo.Color;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
@@ -21,6 +22,6 @@ public class ParticleRegistration {
 	@SubscribeEvent	
 	public static void registerFactories(ParticleFactoryRegisterEvent evt) {
 		Minecraft.getInstance().particles.registerFactory(ParticleRegistration.TORCHPARTICLE.get(),
-				new TorchParticleFactory());
+				TorchParticleType.TorchParticleFactory::new);
 	}
 }
