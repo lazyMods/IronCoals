@@ -2,6 +2,7 @@ package com.flamebom.ironcoals.block;
 
 import java.util.Random;
 
+import com.flamebom.ironcoals.particles.TorchParticle;
 import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.ParticleRegistration;
 
@@ -15,7 +16,7 @@ import net.minecraft.world.World;
 
 public class IronCoalWallTorchBlock extends WallTorchBlock {
 	public IronCoalWallTorchBlock() {
-		super(Block.Properties.from(Blocks.WALL_TORCH).lootFrom(BlockRegistration.IRONCOALTORCH.get()), null);
+		super(Block.Properties.from(Blocks.WALL_TORCH).lootFrom(BlockRegistration.IRONCOALTORCH.get()), ParticleRegistration.TORCHPARTICLE.get());
 	}
 
 	@Override
@@ -23,11 +24,4 @@ public class IronCoalWallTorchBlock extends WallTorchBlock {
 		return 15;
 	}
 
-	@Override
-	public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-		double d0 = (double) pos.getX() + 0.5D;
-		double d1 = (double) pos.getY() + 0.7D;
-		double d2 = (double) pos.getZ() + 0.5D;
-		worldIn.addParticle(ParticleRegistration.TORCHPARTICLE.get(), d0, d1, d2, 0.0D, 0.0D, 0.0D);
-	}
 }
