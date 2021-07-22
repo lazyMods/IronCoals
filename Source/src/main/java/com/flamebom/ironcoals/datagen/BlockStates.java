@@ -5,7 +5,7 @@ import com.flamebom.ironcoals.setup.BlockRegistration;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ResourceLocation;
@@ -14,7 +14,7 @@ import net.minecraftforge.client.model.generators.*;
 
 public class BlockStates extends BlockStateProvider {
 
-	public BlockStates(DataGenerator gen, ExistingFileHelper exFileHelper) {
+	public BlockStates(BuiltinRegistries gen, ExistingFileHelper exFileHelper) {
 		super(gen, IronCoals.MOD_ID, exFileHelper);
 	}
 

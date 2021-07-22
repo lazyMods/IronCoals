@@ -4,121 +4,121 @@ import java.util.function.Consumer;
 
 import com.flamebom.ironcoals.setup.ItemRegistration;
 
-import net.minecraft.advancements.criterion.InventoryChangeTrigger;
-import net.minecraft.block.Blocks;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.RecipeProvider;
-import net.minecraft.data.ShapedRecipeBuilder;
-import net.minecraft.data.ShapelessRecipeBuilder;
-import net.minecraft.tags.ItemTags;
+import net.minecraft.advancements.critereon.FluidPredicate;
+import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.data.package-info;
+import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.server.players.UserBanListEntry;
 import net.minecraftforge.common.Tags;
-import net.minecraft.item.Items;
+import net.minecraft.world.item.BookItem;
 
-public class Recipes extends RecipeProvider {
-	public Recipes(DataGenerator generatorIn) {
+public class Recipes extends FinishedRecipe {
+	public Recipes(BuiltinRegistries generatorIn) {
 		super(generatorIn);
 	}
 
 	@Override
-	    protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
+	    protected void buildShapelessRecipes(Consumer<package-info> consumer) {
 	   // Recipes from that create the same item don't work so you have to comment them out  
-		 ShapedRecipeBuilder.shaped(ItemRegistration.IRONCOAL.get(),8)
+		 RecipeProvider.shaped(ItemRegistration.IRONCOAL.get(),8)
 	         .pattern("aaa")
 	         .pattern("a#a")
 	         .pattern("aaa")
-	         .define('a', ItemTags.COALS)
+	         .define('a', UserBanListEntry.COALS)
 	         .define('#', Tags.Items.STORAGE_BLOCKS_IRON)
 	         .group("IronCoals")
-	         .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	         .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	         .save(consumer);
-	         ShapedRecipeBuilder.shaped(ItemRegistration.IRONCOALTORCH.get(),4)
+	         RecipeProvider.shaped(ItemRegistration.IRONCOALTORCH.get(),4)
 	         .pattern("a")
 	         .pattern("x")
 	         .define('a', ItemRegistration.IRONCOALCHUNK.get())
-	         .define('x',Items.STICK)
+	         .define('x',BookItem.STICK)
 	         .group("IronCoals")
-	         .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	         .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	         .save(consumer);
-	        ShapedRecipeBuilder.shaped(ItemRegistration.GOLDCOAL.get(),8)
+	        RecipeProvider.shaped(ItemRegistration.GOLDCOAL.get(),8)
 	         .pattern("aaa")
 	         .pattern("a#a")
 	         .pattern("aaa")
 	         .define('a', ItemRegistration.IRONCOAL.get())
 	         .define('#', Tags.Items.STORAGE_BLOCKS_GOLD)
 	         .group("IronCoals")
-	         .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	         .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	         .save(consumer);
 	 
-	        ShapedRecipeBuilder.shaped(ItemRegistration.DIAMONDCOAL.get(),8)
+	        RecipeProvider.shaped(ItemRegistration.DIAMONDCOAL.get(),8)
 	         .pattern("aaa")
 	         .pattern("a#a")
 	         .pattern("aaa")
 	         .define('a', ItemRegistration.GOLDCOAL.get())
 	         .define('#', Tags.Items.STORAGE_BLOCKS_DIAMOND)
 	         .group("IronCoals")
-	         .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	         .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	         .save(consumer);
-	        ShapedRecipeBuilder.shaped(ItemRegistration.EMERALDCOAL.get(),8)
+	        RecipeProvider.shaped(ItemRegistration.EMERALDCOAL.get(),8)
 	         .pattern("aaa")
 	         .pattern("a#a")
 	         .pattern("aaa")
 	         .define('a', ItemRegistration.DIAMONDCOAL.get())
 	         .define('#', Tags.Items.STORAGE_BLOCKS_EMERALD)
 	         .group("IronCoals")
-	         .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	         .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	         .save(consumer);
 	        
-	        ShapedRecipeBuilder.shaped(ItemRegistration.AEONCOAL.get())
+	        RecipeProvider.shaped(ItemRegistration.AEONCOAL.get())
 	         .pattern("aba")
 	         .pattern("x#x")
 	         .pattern("aba")
 	         .define('a', ItemRegistration.EMERALDCOAL.get())
-	         .define('#', Items.NETHERITE_BLOCK)
-	         .define('x', Items.NETHER_STAR)
-	         .define('b', Items.HEART_OF_THE_SEA)
+	         .define('#', BookItem.NETHERITE_BLOCK)
+	         .define('x', BookItem.NETHER_STAR)
+	         .define('b', BookItem.HEART_OF_THE_SEA)
 	         .group("IronCoals")
-	         .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	         .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	         .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(ItemRegistration.IRONCOALBLOCKITEM.get())
+	        ShapedRecipeBuilder.shapeless(ItemRegistration.IRONCOALBLOCKITEM.get())
 	        .requires(ItemRegistration.IRONCOAL.get(),9)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(ItemRegistration.GOLDCOALBLOCKITEM.get())
+	        ShapedRecipeBuilder.shapeless(ItemRegistration.GOLDCOALBLOCKITEM.get())
 	        .requires(ItemRegistration.GOLDCOAL.get(),9)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(ItemRegistration.DIAMONDCOALBLOCKITEM.get())
+	        ShapedRecipeBuilder.shapeless(ItemRegistration.DIAMONDCOALBLOCKITEM.get())
 	        .requires(ItemRegistration.DIAMONDCOAL.get(),9)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(ItemRegistration.EMERALDCOALBLOCKITEM.get())
+	        ShapedRecipeBuilder.shapeless(ItemRegistration.EMERALDCOALBLOCKITEM.get())
 	        .requires(ItemRegistration.EMERALDCOAL.get(),9)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(ItemRegistration.BASECOALCHUNK.get(),8)
-	        .requires(ItemTags.COALS)
+	        ShapedRecipeBuilder.shapeless(ItemRegistration.BASECOALCHUNK.get(),8)
+	        .requires(UserBanListEntry.COALS)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(Items.COAL.getItem())
+	        ShapedRecipeBuilder.shapeless(BookItem.COAL.getItem())
 	        .requires(ItemRegistration.BASECOALCHUNK.get(),8)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(ItemRegistration.CHARCOALCHUNK.get(),8)
-	        .requires(Items.CHARCOAL)
+	        ShapedRecipeBuilder.shapeless(ItemRegistration.CHARCOALCHUNK.get(),8)
+	        .requires(BookItem.CHARCOAL)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
-	        ShapelessRecipeBuilder.shapeless(Items.CHARCOAL.getItem())
+	        ShapedRecipeBuilder.shapeless(BookItem.CHARCOAL.getItem())
 	        .requires(ItemRegistration.CHARCOALCHUNK.get(),8)
 	        .group("IronCoals")
-	        .unlockedBy("stone", InventoryChangeTrigger.Instance.hasItems(Blocks.STONE))
+	        .unlockedBy("stone", FluidPredicate.Builder.hasItems(CropBlock.STONE))
 	        .save(consumer);
 	        
 	        

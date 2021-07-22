@@ -7,30 +7,30 @@ import com.flamebom.ironcoals.helpers.CoalHelper;
 import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.Config;
 
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.World;
+import net.minecraft.world.item.GameMasterBlockItem;
+import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.item.BoatItem;
+import net.minecraft.nbt.ShortTag;
+import net.minecraft.BlockUtil;
+import net.minecraft.network.ConnectionProtocol;
+import net.minecraft.world.item.enchantment.LootBonusEnchantment;
 
-public class DiamondCoalBlockItem extends BlockItem {
+public class DiamondCoalBlockItem extends ContainerLevelAccess {
 
 	public DiamondCoalBlockItem() {
-		super(BlockRegistration.DIAMONDCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
+		super(BlockRegistration.DIAMONDCOALBLOCK.get(), new ContainerLevelAccess.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 	@Override
-	public ITextComponent getName(ItemStack stack) {
-		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.AQUA);
+	public ShortTag getName(BoatItem stack) {
+		return new ConnectionProtocol(this.getDescriptionId(stack)).withStyle(BlockUtil.AQUA);
 	}
 	@Override
-	public int getBurnTime(ItemStack itemStack) {
+	public int getBurnTime(BoatItem itemStack) {
 		return (10*Config.DIAMOND_COAL_BURN.get());
 	}
 @Override
-public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.diamondcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.DIAMOND_COAL_BURN.get()*10))).withStyle(TextFormatting.AQUA));
+public void appendHoverText(BoatItem stack, LootBonusEnchantment worldIn, List<ShortTag> tooltip, GameMasterBlockItem flagIn) {
+	tooltip.add(new ConnectionProtocol("message.diamondcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.DIAMOND_COAL_BURN.get()*10))).withStyle(BlockUtil.AQUA));
 }
 
 }

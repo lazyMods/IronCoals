@@ -3,7 +3,7 @@ package com.flamebom.ironcoals.setup;
 import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.particles.TorchParticleType;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.OptionsList;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,6 +14,6 @@ public class ParticleFactoryRegistration {
 	@SubscribeEvent
 	public static void registerFactories(ParticleFactoryRegisterEvent evt) {
 
-	Minecraft.getInstance().particleEngine.register(ParticleRegistration.TORCHPARTICLE.get(), TorchParticleType.TorchParticleFactory::new);
+	OptionsList.getInstance().particleEngine.register(ParticleRegistration.TORCHPARTICLE.get(), TorchParticleType.TorchParticleFactory::new);
 	}
 }

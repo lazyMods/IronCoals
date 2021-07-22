@@ -8,10 +8,10 @@ import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.ItemRegistration;
 import com.flamebom.ironcoals.setup.ParticleRegistration;
 
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.client.renderer.blockentity.ChestRenderer;
+import net.minecraft.client.renderer.block.model.multipart.Selector;
+import net.minecraft.world.inventory.HorseInventoryMenu;
+import net.minecraft.world.item.BoatItem;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,10 +30,10 @@ public class IronCoals {
 	public static final String MOD_ID = "ironcoals";
 	public static IronCoals instance;
 
-	public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
+	public static final HorseInventoryMenu ITEM_GROUP = new HorseInventoryMenu(MOD_ID) {
 		@Override
-		public ItemStack makeIcon() {
-			return new ItemStack(ItemRegistration.IRONCOAL.get());
+		public BoatItem makeIcon() {
+			return new BoatItem(ItemRegistration.IRONCOAL.get());
 		}
 	};
 
@@ -54,8 +54,8 @@ public class IronCoals {
 	}
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALTORCH.get(), RenderType.cutout());
-		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), RenderType.cutout());
+		Selector.setRenderLayer(BlockRegistration.IRONCOALTORCH.get(), ChestRenderer.cutout());
+		Selector.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), ChestRenderer.cutout());
 	}
 
 	// You can use SubscribeEvent and let the Event Bus discover methods to call

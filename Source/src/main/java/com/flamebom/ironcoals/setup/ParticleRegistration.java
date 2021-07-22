@@ -3,7 +3,7 @@ package com.flamebom.ironcoals.setup;
 import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.particles.TorchParticleType;
 
-import net.minecraft.particles.ParticleType;
+import net.minecraft.core.particles.ParticleType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
