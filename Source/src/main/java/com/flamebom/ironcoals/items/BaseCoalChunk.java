@@ -12,18 +12,18 @@ import net.minecraft.world.World;
 
 public class BaseCoalChunk extends Item {
 	public BaseCoalChunk() {
-		super(new Item.Properties().group(IronCoals.ITEM_GROUP));
+		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 	@Override
-	public ITextComponent getDisplayName(ItemStack stack) {
-		return new TranslationTextComponent(this.getTranslationKey(stack));
+	public ITextComponent getName(ItemStack stack) {
+		return new TranslationTextComponent(this.getDescriptionId(stack));
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
 		return 200;
 	}
 	@Override
-	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
 		tooltip.add(new TranslationTextComponent("message.basecoalchunk"));
 	}
 

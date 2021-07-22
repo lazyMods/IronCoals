@@ -15,24 +15,24 @@ import net.minecraft.world.World;
 
 public class AeonCoal extends Item {
 	public AeonCoal() {
-		super(new Item.Properties().group(IronCoals.ITEM_GROUP));
+		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 
 	@Override
-	public ITextComponent getDisplayName(ItemStack stack) {
-		return new TranslationTextComponent(this.getTranslationKey(stack)).mergeStyle(TextFormatting.DARK_RED);
+	public ITextComponent getName(ItemStack stack) {
+		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.DARK_RED);
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
 		return 2147483647;
 	}
 	@Override
-	public boolean hasEffect(ItemStack stack) {
+	public boolean isFoil(ItemStack stack) {
 		return true;
 	}
 @Override
-public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add((new TranslationTextComponent("message.aeoncoal")).mergeStyle(TextFormatting.DARK_RED));
+public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	tooltip.add((new TranslationTextComponent("message.aeoncoal")).withStyle(TextFormatting.DARK_RED));
 }
 }
 	

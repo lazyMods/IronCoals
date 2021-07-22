@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 
 public class IronCoalWallTorchBlock extends WallTorchBlock {
 	public IronCoalWallTorchBlock() {
-		super(Block.Properties.from(Blocks.WALL_TORCH).lootFrom(BlockRegistration.IRONCOALTORCH.get()), null);
+		super(Block.Properties.copy(Blocks.WALL_TORCH).dropsLike(BlockRegistration.IRONCOALTORCH.get()), null);
 	}
 
 	@Override
@@ -27,14 +27,14 @@ public class IronCoalWallTorchBlock extends WallTorchBlock {
 
 	@Override
 	public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-	    Direction direction = stateIn.get(HORIZONTAL_FACING);
+	    Direction direction = stateIn.getValue(FACING);
 	      double d0 = (double)pos.getX() + 0.5D;
 	      double d1 = (double)pos.getY() + 0.7D;
 	      double d2 = (double)pos.getZ() + 0.5D;
 	      double d3 = 0.22D;
 	      double d4 = 0.27D;
 	      Direction direction1 = direction.getOpposite();
-	      worldIn.addParticle(ParticleTypes.SMOKE, d0 + 0.27D * (double)direction1.getXOffset(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
-	      worldIn.addParticle(ParticleRegistration.TORCHPARTICLE.get(), d0 + 0.27D * (double)direction1.getXOffset(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
+	      worldIn.addParticle(ParticleTypes.SMOKE, d0 + 0.27D * (double)direction1.getStepX(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getStepZ(), 0.0D, 0.0D, 0.0D);
+	      worldIn.addParticle(ParticleRegistration.TORCHPARTICLE.get(), d0 + 0.27D * (double)direction1.getStepX(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getStepZ(), 0.0D, 0.0D, 0.0D);
 	}
 }

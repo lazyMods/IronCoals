@@ -16,19 +16,19 @@ import net.minecraft.world.World;
 
 public class GoldCoalChunk extends Item {
 	public GoldCoalChunk() {
-		super(new Item.Properties().group(IronCoals.ITEM_GROUP));
+		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 
 	@Override
-	public ITextComponent getDisplayName(ItemStack stack) {
-		return new TranslationTextComponent(this.getTranslationKey(stack)).mergeStyle(TextFormatting.GOLD);
+	public ITextComponent getName(ItemStack stack) {
+		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.GOLD);
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
 		return (Config.GOLD_COAL_BURN.get()/8);
 	}
 @Override
-public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.goldcoalchunk" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()/8))).mergeStyle(TextFormatting.GOLD));
+public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	tooltip.add(new TranslationTextComponent("message.goldcoalchunk" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()/8))).withStyle(TextFormatting.GOLD));
 }
 }

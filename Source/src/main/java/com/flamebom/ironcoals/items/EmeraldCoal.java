@@ -18,20 +18,20 @@ import net.minecraft.world.World;
 
 public class EmeraldCoal extends Item {
 	public EmeraldCoal() {
-		super(new Item.Properties().group(IronCoals.ITEM_GROUP));
+		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 
 	@Override
-	public ITextComponent getDisplayName(ItemStack stack) {
-		return new TranslationTextComponent(this.getTranslationKey(stack)).mergeStyle(TextFormatting.GREEN);
+	public ITextComponent getName(ItemStack stack) {
+		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.GREEN);
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
 		return Config.EMERALD_COAL_BURN.get();
 	}
 @Override
-public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.emeraldcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.EMERALD_COAL_BURN.get()))).mergeStyle(TextFormatting.GREEN));
+public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	tooltip.add(new TranslationTextComponent("message.emeraldcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.EMERALD_COAL_BURN.get()))).withStyle(TextFormatting.GREEN));
 }
 }
 	

@@ -11,12 +11,12 @@ import net.minecraft.util.text.TranslationTextComponent;
 public class IronCoalTorchBlockItem extends WallOrFloorItem {
 
 	public IronCoalTorchBlockItem() {
-		super(BlockRegistration.IRONCOALTORCH.get(), BlockRegistration.IRONCOALWALLTORCH.get(), new WallOrFloorItem.Properties().group(IronCoals.ITEM_GROUP));
+		super(BlockRegistration.IRONCOALTORCH.get(), BlockRegistration.IRONCOALWALLTORCH.get(), new WallOrFloorItem.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 
 	@Override
-	public ITextComponent getDisplayName(ItemStack stack) {
-		return new TranslationTextComponent(this.getTranslationKey(stack)).mergeStyle(TextFormatting.GRAY);
+	public ITextComponent getName(ItemStack stack) {
+		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.GRAY);
 	}
 
 }

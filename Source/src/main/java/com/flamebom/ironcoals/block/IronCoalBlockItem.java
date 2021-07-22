@@ -18,19 +18,19 @@ import net.minecraft.world.World;
 public class IronCoalBlockItem extends BlockItem {
 
 	public IronCoalBlockItem() {
-		super(BlockRegistration.IRONCOALBLOCK.get(), new BlockItem.Properties().group(IronCoals.ITEM_GROUP));
+		super(BlockRegistration.IRONCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 	@Override
-	public ITextComponent getDisplayName(ItemStack stack) {
-		return new TranslationTextComponent(this.getTranslationKey(stack)).mergeStyle(TextFormatting.GRAY);
+	public ITextComponent getName(ItemStack stack) {
+		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.GRAY);
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
 		return (Config.IRON_COAL_BURN.get()*10);
 	}
 @Override
-public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.ironcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.IRON_COAL_BURN.get()*10))).mergeStyle(TextFormatting.GRAY));
+public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	tooltip.add(new TranslationTextComponent("message.ironcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.IRON_COAL_BURN.get()*10))).withStyle(TextFormatting.GRAY));
 }
 
 }

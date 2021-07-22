@@ -12,10 +12,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class IronCoalTorchBlock extends TorchBlock {
 
 	public IronCoalTorchBlock() {
-		super(Properties.from(Blocks.TORCH), null);
+		super(Properties.copy(Blocks.TORCH), null);
 	}
 
 	@Override

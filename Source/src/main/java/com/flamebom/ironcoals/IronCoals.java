@@ -32,7 +32,7 @@ public class IronCoals {
 
 	public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
 		@Override
-		public ItemStack createIcon() {
+		public ItemStack makeIcon() {
 			return new ItemStack(ItemRegistration.IRONCOAL.get());
 		}
 	};
@@ -54,8 +54,8 @@ public class IronCoals {
 	}
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALTORCH.get(), RenderType.getCutout());
-		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALTORCH.get(), RenderType.cutout());
+		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), RenderType.cutout());
 	}
 
 	// You can use SubscribeEvent and let the Event Bus discover methods to call

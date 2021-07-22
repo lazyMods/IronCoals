@@ -5,11 +5,13 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class IronCoalBlock extends Block {
 
 	public IronCoalBlock() {
-		super(Properties.create(Material.ROCK).hardnessAndResistance(5.0F,
-				6.0F).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).setRequiresTool())
+		super(Properties.of(Material.STONE).strength(5.0F,
+				6.0F).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops())
 		;
 	}
 
