@@ -2,11 +2,11 @@ package com.flamebom.ironcoals.datagen;
 
 import com.flamebom.ironcoals.setup.BlockRegistration;
 
-import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.data.DataGenerator;
 
 public class LootTables extends BaseLootTable {
 
-	public LootTables(BuiltinRegistries dataGeneratorIn) {
+	public LootTables(DataGenerator dataGeneratorIn) {
 		super(dataGeneratorIn);
 	}
 

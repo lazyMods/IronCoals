@@ -8,30 +8,30 @@ import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.helpers.CoalHelper;
 import com.flamebom.ironcoals.setup.Config;
 
-import net.minecraft.world.item.GameMasterBlockItem;
-import net.minecraft.world.item.BannerItem;
-import net.minecraft.world.item.BoatItem;
-import net.minecraft.nbt.ShortTag;
-import net.minecraft.BlockUtil;
-import net.minecraft.network.ConnectionProtocol;
-import net.minecraft.world.item.enchantment.LootBonusEnchantment;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.World;
 
-public class IronCoal extends BannerItem {
+public class IronCoal extends Item {
 	public IronCoal() {
-		super(new BannerItem.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 
 	@Override
-	public ShortTag getName(BoatItem stack) {
-		return new ConnectionProtocol(this.getDescriptionId(stack)).withStyle(BlockUtil.GRAY);
+	public ITextComponent getName(ItemStack stack) {
+		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.GRAY);
 	}
 	@Override
-	public int getBurnTime(BoatItem itemStack) {
+	public int getBurnTime(ItemStack itemStack) {
 		return Config.IRON_COAL_BURN.get();
 	}
 @Override
-public void appendHoverText(BoatItem stack, LootBonusEnchantment worldIn, List<ShortTag> tooltip, GameMasterBlockItem flagIn) {
-	tooltip.add(new ConnectionProtocol("message.ironcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.IRON_COAL_BURN.get()))).withStyle(BlockUtil.GRAY));
+public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+	tooltip.add(new TranslationTextComponent("message.ironcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.IRON_COAL_BURN.get()))).withStyle(TextFormatting.GRAY));
 }
 }
 	

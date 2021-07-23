@@ -4,11 +4,11 @@ import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.ItemRegistration;
 
-import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
 public class Language extends LanguageProvider {
-	public Language(BuiltinRegistries gen) {
+	public Language(DataGenerator gen) {
 		super(gen, IronCoals.MOD_ID, "en_us");
 
 	}

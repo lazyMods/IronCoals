@@ -21,32 +21,32 @@ import com.flamebom.ironcoals.items.GoldCoalChunk;
 import com.flamebom.ironcoals.items.IronCoal;
 import com.flamebom.ironcoals.items.IronCoalChunk;
 
-import net.minecraft.world.item.BannerItem;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemRegistration {
-	public static final DeferredRegister<BannerItem> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
 			IronCoals.MOD_ID);
-	public static final RegistryObject<BannerItem> IRONCOAL = ITEMS.register("iron_coal", IronCoal::new);
+	public static final RegistryObject<Item> IRONCOAL = ITEMS.register("iron_coal", IronCoal::new);
 	
-	public static final RegistryObject<BannerItem> GOLDCOAL = ITEMS.register("gold_coal", GoldCoal::new);
-	public static final RegistryObject<BannerItem> DIAMONDCOAL = ITEMS.register("diamond_coal", DiamondCoal::new);
-	public static final RegistryObject<BannerItem> EMERALDCOAL = ITEMS.register("emerald_coal", EmeraldCoal::new);
-	public static final RegistryObject<BannerItem> AEONCOAL = ITEMS.register("aeon_coal", AeonCoal::new);
+	public static final RegistryObject<Item> GOLDCOAL = ITEMS.register("gold_coal", GoldCoal::new);
+	public static final RegistryObject<Item> DIAMONDCOAL = ITEMS.register("diamond_coal", DiamondCoal::new);
+	public static final RegistryObject<Item> EMERALDCOAL = ITEMS.register("emerald_coal", EmeraldCoal::new);
+	public static final RegistryObject<Item> AEONCOAL = ITEMS.register("aeon_coal", AeonCoal::new);
 	
 	
-	public static final RegistryObject<BannerItem> CHARCOALCHUNK = ITEMS.register("charcoal_chunk", CharcoalChunk::new);
-	public static final RegistryObject<BannerItem> BASECOALCHUNK = ITEMS.register("base_coal_chunk", BaseCoalChunk::new);
-	public static final RegistryObject<BannerItem> IRONCOALCHUNK = ITEMS.register("iron_coal_chunk", IronCoalChunk::new);
-	public static final RegistryObject<BannerItem> GOLDCOALCHUNK = ITEMS.register("gold_coal_chunk", GoldCoalChunk::new);
-	public static final RegistryObject<BannerItem> DIAMONDCOALCHUNK = ITEMS.register("diamond_coal_chunk", DiamondCoalChunk::new);
-	public static final RegistryObject<BannerItem> EMERALDCOALCHUNK = ITEMS.register("emerald_coal_chunk", EmeraldCoalChunk::new);
+	public static final RegistryObject<Item> CHARCOALCHUNK = ITEMS.register("charcoal_chunk", CharcoalChunk::new);
+	public static final RegistryObject<Item> BASECOALCHUNK = ITEMS.register("base_coal_chunk", BaseCoalChunk::new);
+	public static final RegistryObject<Item> IRONCOALCHUNK = ITEMS.register("iron_coal_chunk", IronCoalChunk::new);
+	public static final RegistryObject<Item> GOLDCOALCHUNK = ITEMS.register("gold_coal_chunk", GoldCoalChunk::new);
+	public static final RegistryObject<Item> DIAMONDCOALCHUNK = ITEMS.register("diamond_coal_chunk", DiamondCoalChunk::new);
+	public static final RegistryObject<Item> EMERALDCOALCHUNK = ITEMS.register("emerald_coal_chunk", EmeraldCoalChunk::new);
 	
-	public static final RegistryObject<BannerItem> IRONCOALBLOCKITEM = ITEMS.register("iron_coal_block",IronCoalBlockItem::new);
-	public static final RegistryObject<BannerItem> IRONCOALTORCH = ITEMS.register("iron_coal_torch",IronCoalTorchBlockItem::new);
-	public static final RegistryObject<BannerItem> GOLDCOALBLOCKITEM = ITEMS.register("gold_coal_block",GoldCoalBlockItem::new);
-	public static final RegistryObject<BannerItem> DIAMONDCOALBLOCKITEM = ITEMS.register("diamond_coal_block",DiamondCoalBlockItem::new);
-	public static final RegistryObject<BannerItem> EMERALDCOALBLOCKITEM = ITEMS.register("emerald_coal_block",EmeraldCoalBlockItem::new);
+	public static final RegistryObject<Item> IRONCOALBLOCKITEM = ITEMS.register("iron_coal_block",IronCoalBlockItem::new);
+	public static final RegistryObject<Item> IRONCOALTORCH = ITEMS.register("iron_coal_torch",IronCoalTorchBlockItem::new);
+	public static final RegistryObject<Item> GOLDCOALBLOCKITEM = ITEMS.register("gold_coal_block",GoldCoalBlockItem::new);
+	public static final RegistryObject<Item> DIAMONDCOALBLOCKITEM = ITEMS.register("diamond_coal_block",DiamondCoalBlockItem::new);
+	public static final RegistryObject<Item> EMERALDCOALBLOCKITEM = ITEMS.register("emerald_coal_block",EmeraldCoalBlockItem::new);
 }

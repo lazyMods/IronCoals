@@ -1,11 +1,11 @@
 package com.flamebom.ironcoals.particles;
 
-import net.minecraft.client.renderer.ItemModelShaper;
-import net.minecraft.client.renderer.VirtualScreen;
-import net.minecraft.client.particle.PortalParticle;
+import net.minecraft.client.particle.IParticleRenderType;
+import net.minecraft.client.particle.SpriteTexturedParticle;
+import net.minecraft.client.world.ClientWorld;
 
-public class TorchParticle extends VirtualScreen {
-    public TorchParticle(PortalParticle worldIn, double xCoordIn, double yCoordIn, double zCoordIn, double xSpeedIn, double ySpeedIn, double speedIn) {
+public class TorchParticle extends SpriteTexturedParticle {
+    public TorchParticle(ClientWorld worldIn, double xCoordIn, double yCoordIn, double zCoordIn, double xSpeedIn, double ySpeedIn, double speedIn) {
         super(worldIn, xCoordIn, yCoordIn, zCoordIn, xSpeedIn, ySpeedIn, speedIn);
         this.rCol = 0.67F;
         this.gCol = 0.67F;
@@ -19,8 +19,8 @@ public class TorchParticle extends VirtualScreen {
         this.alpha = .8f;
     }
 
-    public ItemModelShaper getRenderType() {
-        return ItemModelShaper.PARTICLE_SHEET_TRANSLUCENT;
+    public IParticleRenderType getRenderType() {
+        return IParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
     }
 
     public void move(double x, double y, double z) {
