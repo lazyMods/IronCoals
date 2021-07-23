@@ -20,7 +20,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -60,7 +59,7 @@ public class IronCoals {
 
 	// You can use SubscribeEvent and let the Event Bus discover methods to call
 	@SubscribeEvent
-	public void onServerStarting(FMLServerStartingEvent event) {
+	public void onServerStarting(net.minecraftforge.fmlserverevents.FMLServerStartingEvent event) {
 		// do something when the server starts
 		LOGGER.info("HELLO from server starting");
 
