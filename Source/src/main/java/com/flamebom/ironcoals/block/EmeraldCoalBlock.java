@@ -1,18 +1,14 @@
 package com.flamebom.ironcoals.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ToolType;
-
-import net.minecraft.block.AbstractBlock.Properties;
 
 public class EmeraldCoalBlock extends Block {
 
 	public EmeraldCoalBlock() {
-		super(Properties.of(Material.STONE).strength(5.0F,
-				6.0F).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops())
-		;
+		super(Properties.of(net.minecraft.world.level.material.Material.STONE).strength(5.0F, 6.0F)
+				.sound(net.minecraft.world.level.block.SoundType.STONE).harvestTool(ToolType.PICKAXE)
+				.requiresCorrectToolForDrops());
 	}
 
 }

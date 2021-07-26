@@ -9,9 +9,8 @@ import com.flamebom.ironcoals.setup.ItemRegistration;
 import com.flamebom.ironcoals.setup.ParticleRegistration;
 
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -29,9 +28,11 @@ public class IronCoals {
 	public static final String MOD_ID = "ironcoals";
 	public static IronCoals instance;
 
-	public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
+	public static final CreativeModeTab ITEM_GROUP = new CreativeModeTab(MOD_ID) {
+		
 		@Override
 		public ItemStack makeIcon() {
+			// TODO Auto-generated method stub
 			return new ItemStack(ItemRegistration.IRONCOAL.get());
 		}
 	};
@@ -53,7 +54,7 @@ public class IronCoals {
 	}
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALTORCH.get(), RenderType.cutout());
+		RenderType(BlockRegistration.IRONCOALTORCH.get(), RenderType.cutout());
 		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), RenderType.cutout());
 	}
 
