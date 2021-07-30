@@ -11,9 +11,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
-
-public class AeonCoal extends net.minecraft.world.item.Item {
+import net.minecraft.world.item.Item;
+public class AeonCoal extends Item {
 	
 
 	public AeonCoal(Properties properties) {
@@ -24,10 +25,10 @@ public class AeonCoal extends net.minecraft.world.item.Item {
 	public MutableComponent getName(ItemStack stack) {
 		return new TranslatableComponent(this.getDescriptionId(stack)).withStyle(ChatFormatting.DARK_RED);
 	}
-
-	public int getBurnTime(ItemStack itemStack) {
-		return 2147483647;
-	}
+@Override
+public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
+	return Integer.MAX_VALUE;
+}
 
 	public boolean isFoil(ItemStack stack) {
 		return true;
