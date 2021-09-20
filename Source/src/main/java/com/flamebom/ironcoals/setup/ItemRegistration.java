@@ -21,8 +21,8 @@ import com.flamebom.ironcoals.items.GoldCoalChunk;
 import com.flamebom.ironcoals.items.IronCoal;
 import com.flamebom.ironcoals.items.IronCoalChunk;
 
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 

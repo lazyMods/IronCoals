@@ -5,7 +5,7 @@ package com.flamebom.ironcoals.items;
 import java.util.List;
 
 import com.flamebom.ironcoals.IronCoals;
-import net.minecraft.world.item.ItemStack;
+
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -14,11 +14,10 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 public class AeonCoal extends Item {
-	
-
-	public AeonCoal(Properties properties) {
-		super(properties.tab(IronCoals.ITEM_GROUP));
+	public AeonCoal() {
+		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
 		
 	}
 	@Override

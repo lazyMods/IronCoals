@@ -7,13 +7,15 @@ import com.flamebom.ironcoals.helpers.CoalHelper;
 import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.Config;
 
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.World;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.ItemStack;
 
 public class IronCoalBlockItem extends BlockItem {
 
@@ -21,16 +23,16 @@ public class IronCoalBlockItem extends BlockItem {
 		super(BlockRegistration.IRONCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 	@Override
-	public ITextComponent getName(ItemStack stack) {
-		return new TranslationTextComponent(this.getDescriptionId(stack)).withStyle(TextFormatting.GRAY);
+	public MutableComponent getName(ItemStack stack) {
+		return new TranslatableComponent(this.getDescriptionId(stack)).withStyle(ChatFormatting.GRAY);
 	}
 	@Override
-	public int getBurnTime(ItemStack itemStack) {
+	public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
 		return (Config.IRON_COAL_BURN.get()*10);
 	}
 @Override
-public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.ironcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.IRON_COAL_BURN.get()*10))).withStyle(TextFormatting.GRAY));
+public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag  flagIn) {
+	tooltip.add(new TranslatableComponent("message.ironcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.IRON_COAL_BURN.get()*10))).withStyle(ChatFormatting.GRAY));
 }
 
 }
