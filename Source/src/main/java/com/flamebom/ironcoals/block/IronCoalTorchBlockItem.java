@@ -1,3 +1,5 @@
+
+/*
 package com.flamebom.ironcoals.block;
 
 import com.flamebom.ironcoals.IronCoals;
@@ -20,3 +22,4 @@ public class IronCoalTorchBlockItem extends WallOrFloorItem {
 	}
 
 }
+*/

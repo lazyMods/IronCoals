@@ -1,4 +1,4 @@
-package com.flamebom.ironcoals.block;
+/*package com.flamebom.ironcoals.block;
 
 import java.util.Random;
 
@@ -34,3 +34,4 @@ public class IronCoalTorchBlock extends TorchBlock {
 		worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
 	}
 }
+*/

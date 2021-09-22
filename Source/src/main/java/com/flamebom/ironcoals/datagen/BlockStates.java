@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.datagen;
 
 import com.flamebom.ironcoals.IronCoals;
@@ -27,4 +28,4 @@ simpleBlock(BlockRegistration.EMERALDCOALBLOCK.get());
 simpleBlock(BlockRegistration.IRONCOALTORCH.get());
 		
 	}
-}
+}*/

@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.datagen;
 
 import com.flamebom.ironcoals.IronCoals;
@@ -54,4 +55,4 @@ public class Language extends LanguageProvider {
 		
 		
 	}
-}
+}*/

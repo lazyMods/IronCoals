@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.datagen;
 
 import com.flamebom.ironcoals.setup.BlockRegistration;
@@ -20,4 +21,4 @@ lootTables.put(BlockRegistration.EMERALDCOALBLOCK.get(), createStandardTable("em
 
 
 	}
-}
+}*/

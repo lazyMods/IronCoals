@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.datagen;
 
 import java.util.function.Consumer;
@@ -183,7 +184,8 @@ public class Recipes extends RecipeProvider {
 	        .addIngredient(ItemRegistration.EMERALDCOALBLOCKITEM.get())
 	        .setGroup("IronCoals")
 	        .addCriterion("stone", InventoryChangeTrigger.Instance.forItems(Blocks.STONE))
-	        .build(consumer);*/
+	        .build(consumer);
 	        
 }
 }
+*/

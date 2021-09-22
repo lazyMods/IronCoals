@@ -1,4 +1,4 @@
-package com.flamebom.ironcoals.setup;
+/*package com.flamebom.ironcoals.setup;
 
 import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.particles.TorchParticleType;
@@ -16,4 +16,4 @@ public class ParticleFactoryRegistration {
 
 	Minecraft.getInstance().particleEngine.register(ParticleRegistration.TORCHPARTICLE.get(), TorchParticleType.TorchParticleFactory::new);
 	}
-}
+}*/

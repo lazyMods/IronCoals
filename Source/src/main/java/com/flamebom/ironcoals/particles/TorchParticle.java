@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.particles;
 
 import net.minecraft.client.particle.IParticleRenderType;
@@ -45,4 +46,4 @@ public class TorchParticle extends SpriteTexturedParticle {
         }
         
     }
-}
+}*/

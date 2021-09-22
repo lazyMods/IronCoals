@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.particles;
 
 import net.minecraft.client.particle.IAnimatedSprite;
@@ -29,4 +30,4 @@ public class TorchParticleType extends BasicParticleType {
         }
     }
 
-}
+}*/

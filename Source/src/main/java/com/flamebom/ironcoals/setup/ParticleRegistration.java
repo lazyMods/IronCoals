@@ -1,4 +1,4 @@
-package com.flamebom.ironcoals.setup;
+/*package com.flamebom.ironcoals.setup;
 
 import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.particles.TorchParticleType;
@@ -15,4 +15,4 @@ public class ParticleRegistration {
 			TorchParticleType::new);
 
 
-}
+}*/

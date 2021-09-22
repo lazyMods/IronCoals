@@ -6,12 +6,10 @@ import org.apache.logging.log4j.Logger;
 import com.flamebom.ironcoals.setup.Config;
 import com.flamebom.ironcoals.setup.BlockRegistration;
 import com.flamebom.ironcoals.setup.ItemRegistration;
-import com.flamebom.ironcoals.setup.ParticleRegistration;
 
-import net.minecraft.client.renderer.RenderType;
+
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -32,7 +30,6 @@ public class IronCoals {
 		
 		@Override
 		public ItemStack makeIcon() {
-			// TODO Auto-generated method stub
 			return new ItemStack(ItemRegistration.IRONCOAL.get());
 		}
 	};
@@ -42,7 +39,7 @@ public class IronCoals {
 		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-		ParticleRegistration.PARTICLES.register(FMLJavaModLoadingContext.get().getModEventBus());
+	//	ParticleRegistration.PARTICLES.register(FMLJavaModLoadingContext.get().getModEventBus());
 		ItemRegistration.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		BlockRegistration.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
@@ -54,8 +51,8 @@ public class IronCoals {
 	}
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
-		RenderType(BlockRegistration.IRONCOALTORCH.get(), RenderType.cutout());
-		RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), RenderType.cutout());
+	//	RenderType(BlockRegistration.IRONCOALTORCH.get(), RenderType.cutout());
+		//RenderTypeLookup.setRenderLayer(BlockRegistration.IRONCOALWALLTORCH.get(), RenderType.cutout());
 	}
 
 	// You can use SubscribeEvent and let the Event Bus discover methods to call

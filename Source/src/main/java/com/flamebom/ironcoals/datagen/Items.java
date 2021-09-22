@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.datagen;
 
 import com.flamebom.ironcoals.IronCoals;
@@ -37,3 +38,4 @@ singleTexture(ItemRegistration.EMERALDCOALCHUNK.get().getRegistryName().getPath(
 	}
 
 }
+*/

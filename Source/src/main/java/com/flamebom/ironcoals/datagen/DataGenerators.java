@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.datagen;
 
 import net.minecraft.data.DataGenerator;
@@ -22,3 +23,4 @@ public class DataGenerators {
         }
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.flamebom.ironcoals.datagen;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -73,3 +74,4 @@ public abstract class BaseLootTable extends LootTableProvider {
 	        return "IronCoals LootTables";
 	    }
 }
+*/

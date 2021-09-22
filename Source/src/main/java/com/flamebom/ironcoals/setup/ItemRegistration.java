@@ -8,7 +8,6 @@ import com.flamebom.ironcoals.block.DiamondCoalBlockItem;
 import com.flamebom.ironcoals.block.EmeraldCoalBlockItem;
 import com.flamebom.ironcoals.block.GoldCoalBlockItem;
 import com.flamebom.ironcoals.block.IronCoalBlockItem;
-import com.flamebom.ironcoals.block.IronCoalTorchBlockItem;
 import com.flamebom.ironcoals.items.AeonCoal;
 import com.flamebom.ironcoals.items.BaseCoalChunk;
 import com.flamebom.ironcoals.items.CharcoalChunk;
@@ -45,7 +44,7 @@ public class ItemRegistration {
 	public static final RegistryObject<Item> EMERALDCOALCHUNK = ITEMS.register("emerald_coal_chunk", EmeraldCoalChunk::new);
 	
 	public static final RegistryObject<Item> IRONCOALBLOCKITEM = ITEMS.register("iron_coal_block",IronCoalBlockItem::new);
-	public static final RegistryObject<Item> IRONCOALTORCH = ITEMS.register("iron_coal_torch",IronCoalTorchBlockItem::new);
+	//public static final RegistryObject<Item> IRONCOALTORCH = ITEMS.register("iron_coal_torch",IronCoalTorchBlockItem::new);
 	public static final RegistryObject<Item> GOLDCOALBLOCKITEM = ITEMS.register("gold_coal_block",GoldCoalBlockItem::new);
 	public static final RegistryObject<Item> DIAMONDCOALBLOCKITEM = ITEMS.register("diamond_coal_block",DiamondCoalBlockItem::new);
 	public static final RegistryObject<Item> EMERALDCOALBLOCKITEM = ITEMS.register("emerald_coal_block",EmeraldCoalBlockItem::new);
