@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.helpers.CoalHelper;
-import com.flamebom.ironcoals.setup.BlockRegistration;
+import com.flamebom.ironcoals.setup.Registration;
 import com.flamebom.ironcoals.setup.Config;
 
 
@@ -22,7 +22,7 @@ import net.minecraft.world.item.ItemStack;
 public class GoldCoalBlockItem extends BlockItem {
 
 	public GoldCoalBlockItem() {
-		super(BlockRegistration.GOLDCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
+		super(Registration.GOLDCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {
