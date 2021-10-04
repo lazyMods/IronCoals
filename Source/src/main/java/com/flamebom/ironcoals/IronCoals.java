@@ -28,10 +28,11 @@ public class IronCoals {
 	};
 
 	public IronCoals() {
+		Registration.init();
 		ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
 		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
 	//	ParticleRegistration.PARTICLES.register(FMLJavaModLoadingContext.get().getModEventBus());
-	       Registration.init();
+	       
 	}
 	// You can use SubscribeEvent and let the Event Bus discover methods to call
 	@SubscribeEvent
