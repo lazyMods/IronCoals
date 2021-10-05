@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ironcoals:iron_coal_block",
+    "ironcoals:gold_coal_block",
+    "ironcoals:diamond_coal_block",
+    "ironcoals:emerald_coal_block"
+  ]
+}

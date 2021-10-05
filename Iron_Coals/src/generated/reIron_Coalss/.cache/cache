@@ -1,0 +1,6 @@
+b2746c4930c32bece71abba61dfcfa8445487974 data/ironcoals/loot_tables/blocks/diamond_coal_block.json
+6692c1a7bf2ac6a626c09ec124cb9d9cc5342e0f data/ironcoals/loot_tables/blocks/emerald_coal_block.json
+edf99e6f358db4c3513ccd4c7e9c5bc36114df29 data/ironcoals/loot_tables/blocks/gold_coal_block.json
+77a64cdd1b09354d59e98194c846ff6995f90ef7 data/ironcoals/loot_tables/blocks/iron_coal_block.json
+c97f45414f0a0a5c287e2b833e2e052b89c74ec7 data/minecraft/tags/blocks/mineable/pickaxe.json
+c97f45414f0a0a5c287e2b833e2e052b89c74ec7 data/minecraft/tags/blocks/needs_stone_tool.json
