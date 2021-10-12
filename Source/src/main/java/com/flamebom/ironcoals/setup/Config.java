@@ -17,6 +17,7 @@ public class Config {
 	public static ForgeConfigSpec.IntValue GOLD_COAL_BURN;
 	public static ForgeConfigSpec.IntValue DIAMOND_COAL_BURN;
 	public static ForgeConfigSpec.IntValue EMERALD_COAL_BURN;
+	public static ForgeConfigSpec.IntValue NETHERITE_COAL_BURN;
 
 	static {
 		ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
@@ -34,14 +35,15 @@ public class Config {
 	private static void setupCoals(ForgeConfigSpec.Builder SERVER_BUILDER, ForgeConfigSpec.Builder CLIENT_BUILDER) {
 		SERVER_BUILDER.comment("Coal Burntime Settings").push(SUBCATEGORY_COALS);
 	    IRON_COAL_BURN =  SERVER_BUILDER.comment("How long iron coal burns in ticks, default value is 2400")
-                .defineInRange("ironBurnTicks", 2400, 1, 4800);
+                .defineInRange("ironBurnTicks", 2400, 1, Integer.MAX_VALUE);
 	    GOLD_COAL_BURN =  SERVER_BUILDER.comment("How long gold coal burns in ticks, default value is 4800")
-                .defineInRange("goldBurnTicks", 4800, 1, 9600);
+                .defineInRange("goldBurnTicks", 4800, 1, Integer.MAX_VALUE);
 	    DIAMOND_COAL_BURN =  SERVER_BUILDER.comment("How long diamond coal burns in ticks, default value is 9600")
-                .defineInRange("diamondBurnTicks", 9600, 1, 19200);
+                .defineInRange("diamondBurnTicks", 9600, 1, Integer.MAX_VALUE);
 	   EMERALD_COAL_BURN =  SERVER_BUILDER.comment("How long emerald coal burns in ticks, default value is 19200")
-                .defineInRange("emeraldBurnTicks", 19200, 1, 38400);
-	   
+                .defineInRange("emeraldBurnTicks", 19200, 1, Integer.MAX_VALUE);
+	   NETHERITE_COAL_BURN=  SERVER_BUILDER.comment("How long netherite coal burns in ticks, default value is 768000")
+               .defineInRange("netheriteBurnTicks", 768000, 1, Integer.MAX_VALUE);
         SERVER_BUILDER.pop();
      
 	}
