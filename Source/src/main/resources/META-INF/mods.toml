@@ -29,12 +29,13 @@ logoFile="logo.png" #optional
 credits="Flamebom and all the people on the Forge Discord!" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Adds 5 tiers of coal
+Adds 6 tiers of coal
  Iron Coal is 1.5x better then regular Coal
  Gold Coal is 3.0x better then regular Coal
  Diamond Coal is 6.0x better then regular Coal
  Emerald Coal is 12.0x better then regular Coal
- Aeon Coal lasts infinity... at a huge price to make
+ Netherite Coal is 480.0x better then regular Coal
+ Aeon Coal lasts forever... at a huge price to make
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.ironcoals]] #optional
