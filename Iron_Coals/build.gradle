@@ -102,6 +102,16 @@ repositories {
  maven { // TOP
         url "https://cursemaven.com"
     }
+      maven {
+    // location of the maven that hosts JEI files
+    name = "Progwml6 maven"
+    url = "https://dvs1.progwml6.com/files/maven/"
+  }
+  maven {
+    // location of a maven mirror for JEI files, as a fallback
+    name = "ModMaven"
+    url = "https://modmaven.dev"
+  }
     // Put repositories for dependencies here
     // ForgeGradle automatically adds the Forge maven and Maven Central for you
 
@@ -115,8 +125,9 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.1-39.0.5'
-   compileOnly fg.deobf("curse.maven:jei-238222:3596020:api")
-    implementation fg.deobf("curse.maven:jei-238222:3596020")
+      compileOnly fg.deobf("mezz.jei:jei-1.18.1:9.2.1.69:api")
+  // at runtime, use the full JEI jar
+  runtimeOnly fg.deobf("mezz.jei:jei-1.18.1:9.2.1.69")
   implementation fg.deobf("curse.maven:the-one-probe-245211:3550084")
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
