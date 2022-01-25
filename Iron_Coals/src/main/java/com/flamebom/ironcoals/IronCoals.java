@@ -2,7 +2,7 @@ package com.flamebom.ironcoals;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+import net.minecraftforge.event.server.ServerStartingEvent;
 import com.flamebom.ironcoals.setup.Config;
 import com.flamebom.ironcoals.setup.Registration;
 import net.minecraft.world.item.CreativeModeTab;
@@ -36,7 +36,7 @@ public class IronCoals {
 	}
 	// You can use SubscribeEvent and let the Event Bus discover methods to call
 	@SubscribeEvent
-	public void onServerStarting(net.minecraftforge.fmlserverevents.FMLServerStartingEvent event) {
+	public void onServerStarting(ServerStartingEvent event) {
 		// do something when the server starts
 		LOGGER.info("HELLO from server starting");
 
