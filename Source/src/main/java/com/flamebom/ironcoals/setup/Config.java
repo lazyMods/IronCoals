@@ -42,8 +42,8 @@ public class Config {
                 .defineInRange("diamondBurnTicks", 9600, 1, Integer.MAX_VALUE);
 	   EMERALD_COAL_BURN =  SERVER_BUILDER.comment("How long emerald coal burns in ticks, default value is 19200")
                 .defineInRange("emeraldBurnTicks", 19200, 1, Integer.MAX_VALUE);
-	   NETHERITE_COAL_BURN=  SERVER_BUILDER.comment("How long netherite coal burns in ticks, default value is 768000")
-               .defineInRange("netheriteBurnTicks", 768000, 1, Integer.MAX_VALUE);
+	   NETHERITE_COAL_BURN=  SERVER_BUILDER.comment("How long netherite coal burns in ticks, default value is 1536000")
+               .defineInRange("netheriteBurnTicks", 1536000, 1, Integer.MAX_VALUE);
         SERVER_BUILDER.pop();
      
 	}

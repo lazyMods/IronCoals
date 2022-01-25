@@ -23,15 +23,15 @@ public class NetheriteCoal extends Item {
 
 	@Override
 	public ITextComponent getDisplayName(ItemStack stack) {
-		return new TranslationTextComponent(this.getTranslationKey(stack)).mergeStyle(TextFormatting.BLACK);
+		return new TranslationTextComponent(this.getTranslationKey(stack)).mergeStyle(TextFormatting.DARK_GRAY);
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
-		return Config.EMERALD_COAL_BURN.get();
+		return Config.NETHERITE_COAL_BURN.get();
 	}
 @Override
 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-	tooltip.add(new TranslationTextComponent("message.emeraldcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.NETHERITE_COAL_BURN.get()))).mergeStyle(TextFormatting.BLACK));
+	tooltip.add(new TranslationTextComponent("message.emeraldcoal" , Double.toString(CoalHelper.CoalMultiplier(Config.NETHERITE_COAL_BURN.get()))).mergeStyle(TextFormatting.DARK_GRAY));
 }
 }
 	
