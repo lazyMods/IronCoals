@@ -20,6 +20,7 @@ import com.flamebom.ironcoals.items.GoldCoal;
 import com.flamebom.ironcoals.items.GoldCoalChunk;
 import com.flamebom.ironcoals.items.IronCoal;
 import com.flamebom.ironcoals.items.IronCoalChunk;
+import com.flamebom.ironcoals.items.NetheriteCoal;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -43,7 +44,7 @@ public class Registration {
 	public static final RegistryObject<Item> DIAMONDCOAL = ITEMS.register("diamond_coal", DiamondCoal::new);
 	public static final RegistryObject<Item> EMERALDCOAL = ITEMS.register("emerald_coal", EmeraldCoal::new);
 	public static final RegistryObject<Item> AEONCOAL = ITEMS.register("aeon_coal", AeonCoal::new);
-	
+	public static final RegistryObject<Item> NETHERITECOAL = ITEMS.register("netherite_coal", NetheriteCoal::new);
 	
 	public static final RegistryObject<Item> CHARCOALCHUNK = ITEMS.register("charcoal_chunk", CharcoalChunk::new);
 	public static final RegistryObject<Item> BASECOALCHUNK = ITEMS.register("base_coal_chunk", BaseCoalChunk::new);

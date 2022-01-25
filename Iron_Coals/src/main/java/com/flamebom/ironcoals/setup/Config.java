@@ -14,7 +14,7 @@ public class Config {
 	public static ForgeConfigSpec.IntValue GOLD_COAL_BURN;
 	public static ForgeConfigSpec.IntValue DIAMOND_COAL_BURN;
 	public static ForgeConfigSpec.IntValue EMERALD_COAL_BURN;
-
+	public static ForgeConfigSpec.IntValue NETHERITE_COAL_BURN;
 	static {
 		ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
         ForgeConfigSpec.Builder CLIENT_BUILDER = new ForgeConfigSpec.Builder();
@@ -38,7 +38,8 @@ public class Config {
                 .defineInRange("diamondBurnTicks", 9600, 1, 19200);
 	   EMERALD_COAL_BURN =  SERVER_BUILDER.comment("How long emerald coal burns in ticks, default value is 19200")
                 .defineInRange("emeraldBurnTicks", 19200, 1, 38400);
-	   
+	   NETHERITE_COAL_BURN=  SERVER_BUILDER.comment("How long netherite coal burns in ticks, default value is 768000")
+               .defineInRange("netheriteBurnTicks", 768000, 1, Integer.MAX_VALUE);
         SERVER_BUILDER.pop();
      
 	}
