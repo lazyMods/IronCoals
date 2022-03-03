@@ -52,6 +52,6 @@ Adds 5 tiers of coal
 [[dependencies.ironcoals]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.17,)"
+    versionRange="[1.18,)"
     ordering="NONE"
     side="BOTH"
