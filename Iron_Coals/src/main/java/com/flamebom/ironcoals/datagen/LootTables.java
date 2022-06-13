@@ -4,6 +4,8 @@ import com.flamebom.ironcoals.IronCoals;
 import com.flamebom.ironcoals.setup.Registration;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.HashCache;
@@ -37,7 +39,7 @@ public class LootTables extends LootTableProvider {
     }
 
     @Override
-    public void run(HashCache cache) {
+    public void run(CachedOutput  cache) {
         Map<ResourceLocation, LootTable> tables = new HashMap<>();
         tables.put(Registration.IRONCOALBLOCK.get().getLootTable(), createStandardTable("iron_coal_block", Registration.IRONCOALBLOCK.get()).setParamSet(LootContextParamSets.BLOCK).build());
         tables.put(Registration.GOLDCOALBLOCK.get().getLootTable(), createStandardTable("gold_coal_block", Registration.GOLDCOALBLOCK.get()).setParamSet(LootContextParamSets.BLOCK).build());
@@ -61,12 +63,12 @@ public class LootTables extends LootTableProvider {
         return LootTable.lootTable().withPool(builder);
     }
 
-    private void writeTables(HashCache cache, Map<ResourceLocation, LootTable> tables) {
+    private void writeTables(CachedOutput cache, Map<ResourceLocation, LootTable> tables) {
         Path outputFolder = this.generator.getOutputFolder();
         tables.forEach((key, lootTable) -> {
             Path path = outputFolder.resolve("data/" + key.getNamespace() + "/loot_tables/" + key.getPath() + ".json");
             try {
-                DataProvider.save(GSON, cache, net.minecraft.world.level.storage.loot.LootTables.serialize(lootTable), path);
+                DataProvider.saveStable( cache, net.minecraft.world.level.storage.loot.LootTables.serialize(lootTable), path);
             } catch (IOException e) {
                 IronCoals.LOGGER.error("Couldn't write loot table {}", path, e);
             }

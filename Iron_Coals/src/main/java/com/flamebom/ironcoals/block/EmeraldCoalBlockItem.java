@@ -9,7 +9,6 @@ import com.flamebom.ironcoals.setup.Config;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -22,7 +21,7 @@ public class EmeraldCoalBlockItem extends BlockItem {
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {
-		return new TranslatableComponent(this.getDescriptionId(stack)).withStyle(ChatFormatting.GREEN);
+		return Component.translatable(this.getDescriptionId(stack)).withStyle(ChatFormatting.GREEN);
 	}
 
 	@Override
@@ -31,7 +30,7 @@ public class EmeraldCoalBlockItem extends BlockItem {
 	}
 @Override
 public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flagIn) {
-	tooltip.add(new TranslatableComponent("message.emeraldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.EMERALD_COAL_BURN.get()*10))).withStyle(ChatFormatting.GREEN));
+	tooltip.add(Component.translatable("message.emeraldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.EMERALD_COAL_BURN.get()*10))).withStyle(ChatFormatting.GREEN));
 }
 
 }

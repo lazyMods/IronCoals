@@ -6,7 +6,6 @@ import com.flamebom.ironcoals.IronCoals;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
@@ -18,7 +17,7 @@ public class CharcoalChunk extends Item {
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {
-		return new TranslatableComponent(this.getDescriptionId(stack));
+		return Component.translatable(this.getDescriptionId(stack));
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
@@ -26,7 +25,7 @@ public class CharcoalChunk extends Item {
 	}
 	@Override
 	public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag  flagIn) {
-		tooltip.add(new TranslatableComponent("message.charcoalchunk"));
+		tooltip.add(Component.translatable("message.charcoalchunk"));
 	}
 
 }

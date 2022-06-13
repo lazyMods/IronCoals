@@ -9,7 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
@@ -22,7 +21,7 @@ public class DiamondCoalChunk extends Item {
 
 	@Override
 	public MutableComponent getName(ItemStack stack) {
-		return new TranslatableComponent(this.getDescriptionId(stack)).withStyle(ChatFormatting.AQUA);
+		return Component.translatable(this.getDescriptionId(stack)).withStyle(ChatFormatting.AQUA);
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
@@ -30,6 +29,6 @@ public class DiamondCoalChunk extends Item {
 	}
 @Override
 public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag  flagIn) {
-	tooltip.add(new TranslatableComponent("message.diamondcoalchunk" , Double.toString(CoalHelper.CoalMultiplier(Config.DIAMOND_COAL_BURN.get()/8))).withStyle(ChatFormatting.AQUA));
+	tooltip.add(Component.translatable("message.diamondcoalchunk" , Double.toString(CoalHelper.CoalMultiplier(Config.DIAMOND_COAL_BURN.get()/8))).withStyle(ChatFormatting.AQUA));
 }
 }

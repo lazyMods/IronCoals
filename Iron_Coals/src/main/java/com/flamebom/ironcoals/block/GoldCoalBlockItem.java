@@ -11,7 +11,6 @@ import com.flamebom.ironcoals.setup.Config;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
@@ -26,7 +25,7 @@ public class GoldCoalBlockItem extends BlockItem {
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {
-		return new TranslatableComponent(this.getDescriptionId(stack)).withStyle(ChatFormatting.GOLD);
+		return Component.translatable(this.getDescriptionId(stack)).withStyle(ChatFormatting.GOLD);
 	}
 	@Override
 	public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
@@ -34,7 +33,7 @@ public class GoldCoalBlockItem extends BlockItem {
 	}
 @Override
 public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag  flagIn) {
-	tooltip.add(new TranslatableComponent("message.goldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()*10))).withStyle(ChatFormatting.GOLD));
+	tooltip.add(Component.translatable("message.goldcoalblock" , Double.toString(CoalHelper.CoalMultiplier(Config.GOLD_COAL_BURN.get()*10))).withStyle(ChatFormatting.GOLD));
 }
 
 }
