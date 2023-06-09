@@ -19,7 +19,7 @@ import net.minecraft.world.item.ItemStack;
 public class IronCoalBlockItem extends BlockItem {
 
 	public IronCoalBlockItem() {
-		super(Registration.IRONCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
+		super(Registration.IRONCOALBLOCK.get(), new BlockItem.Properties());
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {

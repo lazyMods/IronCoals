@@ -19,7 +19,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class EmeraldCoal extends Item {
 	public EmeraldCoal() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
 	}
 
 	@Override

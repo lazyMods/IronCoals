@@ -17,7 +17,7 @@ import net.minecraft.world.level.Level;
 public class EmeraldCoalBlockItem extends BlockItem {
 
 	public EmeraldCoalBlockItem() {
-		super(Registration.EMERALDCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
+		super(Registration.EMERALDCOALBLOCK.get(), new BlockItem.Properties());
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {

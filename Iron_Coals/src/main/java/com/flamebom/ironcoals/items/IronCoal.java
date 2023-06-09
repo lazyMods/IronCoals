@@ -18,7 +18,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Item;
 public class IronCoal extends Item {
 	public IronCoal() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
 	}
 
 	@Override

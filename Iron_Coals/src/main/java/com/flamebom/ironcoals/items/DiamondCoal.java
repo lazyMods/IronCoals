@@ -19,7 +19,7 @@ import net.minecraft.world.item.Item;
 
 public class DiamondCoal extends Item {
 	public DiamondCoal() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
 	}
 
 	@Override

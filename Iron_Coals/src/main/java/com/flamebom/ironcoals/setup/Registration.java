@@ -22,7 +22,11 @@ import com.flamebom.ironcoals.items.IronCoal;
 import com.flamebom.ironcoals.items.IronCoalChunk;
 import com.flamebom.ironcoals.items.NetheriteCoal;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.RegistryObject;
@@ -34,11 +38,13 @@ public class Registration {
 			IronCoals.MOD_ID);
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
 			IronCoals.MOD_ID);
+	public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IronCoals.MOD_ID);
 	public static void init() {
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+		TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
-	public static final RegistryObject<Item> IRONCOAL = ITEMS.register("iron_coal", IronCoal::new);
+	public static final RegistryObject<Item> IRONCOAL = ITEMS.register("iron_coal", IronCoal::new );
 	
 	public static final RegistryObject<Item> GOLDCOAL = ITEMS.register("gold_coal", GoldCoal::new);
 	public static final RegistryObject<Item> DIAMONDCOAL = ITEMS.register("diamond_coal", DiamondCoal::new);
@@ -62,9 +68,27 @@ public class Registration {
 	public static final RegistryObject<Block> GOLDCOALBLOCK = BLOCKS.register("gold_coal_block", GoldCoalBlock::new);
 	public static final RegistryObject<Block> DIAMONDCOALBLOCK = BLOCKS.register("diamond_coal_block", DiamondCoalBlock::new);
 	public static final RegistryObject<Block> EMERALDCOALBLOCK = BLOCKS.register("emerald_coal_block", EmeraldCoalBlock::new);
-	//public static final RegistryObject<Item> IRONCOALTORCH = ITEMS.register("iron_coal_torch",IronCoalTorchBlockItem::new);
-/* Temporary (or maybe forever?) removal of iron torch cause it doesn't fit with the theme very well
-	public static final RegistryObject<Block> IRONCOALTORCH = BLOCKS.register("iron_coal_torch", IronCoalTorchBlock::new);
-	public static final RegistryObject<Block> IRONCOALWALLTORCH = BLOCKS.register("iron_coal_wall_torch", IronCoalWallTorchBlock::new);
-			*/
+	public static final RegistryObject<CreativeModeTab> IRONCOALS_TAB = TABS.register("iron_coals", () -> CreativeModeTab.builder()
+			.title(Component.translatable("itemGroup." + IronCoals.MOD_ID))
+			.icon(() -> new ItemStack(IRONCOAL.get()))
+			.displayItems((enabledFeatures, entries) -> {
+				entries.accept(IRONCOAL.get());
+				entries.accept(GOLDCOAL.get());
+				entries.accept(DIAMONDCOAL.get());
+				entries.accept(EMERALDCOAL.get());
+				entries.accept(AEONCOAL.get());
+				entries.accept(NETHERITECOAL.get());
+				entries.accept(CHARCOALCHUNK.get());
+				entries.accept(BASECOALCHUNK.get());
+				entries.accept(IRONCOALCHUNK.get());
+				entries.accept(GOLDCOALCHUNK.get());
+				entries.accept(DIAMONDCOALCHUNK.get());
+				entries.accept(EMERALDCOALCHUNK.get());
+				entries.accept(IRONCOALBLOCKITEM.get());
+				entries.accept(GOLDCOALBLOCKITEM.get());
+				entries.accept(DIAMONDCOALBLOCKITEM.get());
+				entries.accept(EMERALDCOALBLOCKITEM.get());
+				
+			})
+			.build());
 }

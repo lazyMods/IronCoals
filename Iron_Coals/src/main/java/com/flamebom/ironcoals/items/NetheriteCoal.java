@@ -18,7 +18,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 public class NetheriteCoal extends Item {
 	public NetheriteCoal() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
 	}
 
 	@Override

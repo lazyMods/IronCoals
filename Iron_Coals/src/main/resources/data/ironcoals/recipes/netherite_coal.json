@@ -1,12 +1,16 @@
-{
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "ironcoals:emerald_coal_block"
-  },
-  "addition": {
-    "item": "minecraft:netherite_ingot"
-  },
+	{
+  "type": "minecraft:crafting_shapeless",
+  "group": "IronCoals",
+    "ingredients": [
+        {
+            "item": "ironcoals:emerald_coal_block"
+        },
+        {
+            "item": "minecraft:netherite_ingot"
+        }
+    ],
   "result": {
-    "item": "ironcoals:netherite_coal"
+    "item": "ironcoals:netherite_coal",
+    "count": 1
   }
 }

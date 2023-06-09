@@ -19,13 +19,6 @@ public class IronCoals {
 	public static final String MOD_ID = "ironcoals";
 	public static IronCoals instance;
 
-	public static final CreativeModeTab ITEM_GROUP = new CreativeModeTab(MOD_ID) {
-		
-		@Override
-		public ItemStack makeIcon() {
-			return new ItemStack(Registration.IRONCOAL.get());
-		}
-	};
 
 	public IronCoals() {
 		Registration.init();

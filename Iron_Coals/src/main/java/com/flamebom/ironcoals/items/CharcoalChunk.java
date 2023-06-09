@@ -13,7 +13,7 @@ import net.minecraft.world.item.Item;
 
 public class CharcoalChunk extends Item {
 	public CharcoalChunk() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {

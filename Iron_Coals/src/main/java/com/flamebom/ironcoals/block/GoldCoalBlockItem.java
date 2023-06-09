@@ -21,7 +21,7 @@ import net.minecraft.world.item.ItemStack;
 public class GoldCoalBlockItem extends BlockItem {
 
 	public GoldCoalBlockItem() {
-		super(Registration.GOLDCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
+		super(Registration.GOLDCOALBLOCK.get(), new BlockItem.Properties());
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {

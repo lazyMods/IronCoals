@@ -13,7 +13,7 @@ import net.minecraft.world.item.Item;
 
 public class BaseCoalChunk extends Item {
 	public BaseCoalChunk() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {

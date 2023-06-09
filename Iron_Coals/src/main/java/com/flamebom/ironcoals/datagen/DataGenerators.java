@@ -1,7 +1,13 @@
 
 package com.flamebom.ironcoals.datagen;
 
+import java.util.Collections;
+import java.util.concurrent.CompletableFuture;
+
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -12,12 +18,6 @@ public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
-        if (event.includeServer()) {
-        	 generator.addProvider(event.includeServer(),new Tags(generator, event.getExistingFileHelper()));
-        	   generator.addProvider(event.includeServer(),new LootTables(generator));
-        }
-        if (event.includeClient()) {
-  
-        }
+
     }
 }

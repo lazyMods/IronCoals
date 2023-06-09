@@ -16,7 +16,7 @@ import net.minecraft.world.item.Item;
 
 public class DiamondCoalChunk extends Item {
 	public DiamondCoalChunk() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
 	}
 
 	@Override

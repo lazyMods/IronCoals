@@ -11,13 +11,15 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Item;
 
 public class EmeraldCoalChunk extends Item {
 	public EmeraldCoalChunk() {
-		super(new Item.Properties().tab(IronCoals.ITEM_GROUP));
+		super(new Item.Properties());
+		
 	}
 
 	@Override

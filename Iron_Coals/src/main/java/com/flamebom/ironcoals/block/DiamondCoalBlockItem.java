@@ -19,7 +19,7 @@ import net.minecraft.world.level.Level;
 public class DiamondCoalBlockItem extends BlockItem {
 
 	public DiamondCoalBlockItem() {
-		super(Registration.DIAMONDCOALBLOCK.get(), new BlockItem.Properties().tab(IronCoals.ITEM_GROUP));
+		super(Registration.DIAMONDCOALBLOCK.get(), new BlockItem.Properties());
 	}
 	@Override
 	public MutableComponent getName(ItemStack stack) {
