@@ -1,0 +1,9 @@
+// 1.21.1	2024-11-22T14:04:57.2728186	Block States: ironcoals
+aa956130053c1f416f0298aad9c23a5faf750927 assets/ironcoals/blockstates/diamond_coal_block.json
+5dae51563f795b6463daa54eb0f0eabfe81d3a84 assets/ironcoals/blockstates/emerald_coal_block.json
+bedfa89d9d6c07807580c198985ecd12f1a81687 assets/ironcoals/blockstates/gold_coal_block.json
+03d560cfb955496ac02c5acf288c90e925909859 assets/ironcoals/blockstates/iron_coal_block.json
+2d374f6cbeb66c1d70f538f2a5e364a2a9939c72 assets/ironcoals/models/block/diamond_coal_block.json
+b18c67e08c88c2aeb4d53bfcd8d909231c3d32bc assets/ironcoals/models/block/emerald_coal_block.json
+410262f06d7bfbe077547e9f6f7ad5d9ffe3dc2e assets/ironcoals/models/block/gold_coal_block.json
+9498fa25a7b46c872848e3589e560bb9ca4dbde9 assets/ironcoals/models/block/iron_coal_block.json

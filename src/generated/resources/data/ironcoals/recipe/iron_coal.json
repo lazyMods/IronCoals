@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:storage_blocks/iron"
+    },
+    "a": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "a#a",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ironcoals:iron_coal"
+  }
+}

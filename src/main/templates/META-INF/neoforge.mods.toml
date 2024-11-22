@@ -1,0 +1,37 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "${loader_version_range}" #mandatory
+license = "${mod_license}"
+issueTrackerURL="https://github.com/lazyMods/IronCoals/issues" #optional
+
+[[mods]] #mandatory
+modId = "${mod_id}" #mandatory
+version = "${mod_version}" #mandatory
+displayName = "${mod_name}" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/iron-coals" #optional
+logoFile="logo.png" #optional
+credits="" #optional
+authors = "${mod_authors}" #optional
+
+description = '''
+Adds 6 tiers of coal
+ Iron Coal is 1.5x better then regular Coal
+ Gold Coal is 3.0x better then regular Coal
+ Diamond Coal is 6.0x better then regular Coal
+ Emerald Coal is 12.0x better then regular Coal
+ Netherite Coal is 480.0x better then regular Coal
+ Aeon Coal lasts infinity... at a huge price to make
+'''
+
+[[dependencies."${mod_id}"]] #optional
+modId = "neoforge" #mandatory
+type = "required" #mandatory
+versionRange = "${neo_version_range}" #mandatory
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"

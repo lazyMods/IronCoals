@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    },
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    },
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    },
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    },
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    },
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    },
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    },
+    {
+      "item": "ironcoals:gold_coal_chunk"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ironcoals:gold_coal"
+  }
+}

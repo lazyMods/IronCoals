@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:storage_blocks/diamond"
+    },
+    "a": {
+      "item": "ironcoals:gold_coal"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "a#a",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ironcoals:diamond_coal"
+  }
+}

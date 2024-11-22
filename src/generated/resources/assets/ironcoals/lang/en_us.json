@@ -1,0 +1,22 @@
+{
+  "block.ironcoals.diamond_coal_block": "Diamond Coal Block",
+  "block.ironcoals.emerald_coal_block": "Emerald Coal Block",
+  "block.ironcoals.gold_coal_block": "Gold Coal Block",
+  "block.ironcoals.iron_coal_block": "Iron Coal Block",
+  "item.ironcoals.aeon_coal": "Aeon Coal",
+  "item.ironcoals.charcoal_chunk": "Charcoal Chunk",
+  "item.ironcoals.coal_chunk": "Coal Chunk",
+  "item.ironcoals.diamond_coal": "Diamond Coal",
+  "item.ironcoals.diamond_coal_chunk": "Diamond Coal Chunk",
+  "item.ironcoals.emerald_coal": "Emerald Coal",
+  "item.ironcoals.emerald_coal_chunk": "Emerald Coal Chunk",
+  "item.ironcoals.gold_coal": "Gold Coal",
+  "item.ironcoals.gold_coal_chunk": "Gold Coal Chunk",
+  "item.ironcoals.iron_coal": "Iron Coal",
+  "item.ironcoals.iron_coal_chunk": "Iron Coal Chunk",
+  "item.ironcoals.netherite_coal": "Netherite Coal",
+  "itemGroup.ironcoals": "Iron Coals",
+  "message.aeoncoal": "Burn Time: Literally forever",
+  "message.basiccoalchunk": "Burns 1 item",
+  "message.orecoal": "Burn Time: %sx coal"
+}
