@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "IronCoals",
+  "ingredients": [
+    {
+      "item": "ironcoals:coal_chunk"
+    },
+    {
+      "item": "ironcoals:coal_chunk"
+    },
+    {
+      "item": "ironcoals:coal_chunk"
+    },
+    {
+      "item": "ironcoals:coal_chunk"
+    },
+    {
+      "item": "ironcoals:coal_chunk"
+    },
+    {
+      "item": "ironcoals:coal_chunk"
+    },
+    {
+      "item": "ironcoals:coal_chunk"
+    },
+    {
+      "item": "ironcoals:coal_chunk"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:coal"
+  }
+}

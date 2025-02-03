@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: ironcoals
+Specification-Vendor: lazy
+Specification-Version: 1
+Implementation-Title: ironcoals
+Implementation-Version: 5.0.0
+Implementation-Vendor: lazy
+Implementation-Timestamp: 2024-11-30T14:45:53+0000
+

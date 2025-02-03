@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ironcoals:diamond_coal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ironcoals:diamond_coal"
+  }
+}

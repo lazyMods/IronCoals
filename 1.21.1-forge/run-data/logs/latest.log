@@ -1,0 +1,27 @@
+[30Nov2024 14:38:59.204] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\gamma\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, ironcoals, --all, --output, V:\dev\minecraft\ironcoals-forge\src\generated\resources, --existing, V:\dev\minecraft\ironcoals-forge\src\main\resources]
+[30Nov2024 14:38:59.210] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[30Nov2024 14:38:59.211] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.2 starting: java version 21.0.4 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
+[30Nov2024 14:38:59.299] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[30Nov2024 14:38:59.393] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/gamma/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[30Nov2024 14:39:00.168] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[30Nov2024 14:39:00.719] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\gamma\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, ironcoals, --all, --output, V:\dev\minecraft\ironcoals-forge\src\generated\resources, --existing, V:\dev\minecraft\ironcoals-forge\src\main\resources]
+[30Nov2024 14:39:04.534] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 52.0.29, for MC 1.21.1 with MCP 20240808.132146
+[30Nov2024 14:39:04.534] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v52.0.29 Initialized
+[30Nov2024 14:39:04.564] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[30Nov2024 14:39:04.998] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ironcoals]
+[30Nov2024 14:39:05.051] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/gamma/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.29_mapped_official_1.21.1/forge-1.21.1-52.0.29_mapped_official_1.21.1.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[30Nov2024 14:39:05.052] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/gamma/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.29_mapped_official_1.21.1/forge-1.21.1-52.0.29_mapped_official_1.21.1.jar%230!/data/.mcassetsroot' uses unexpected schema
+[30Nov2024 14:39:05.182] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
+[30Nov2024 14:39:05.185] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 3 ms
+[30Nov2024 14:39:05.186] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: ironcoals
+[30Nov2024 14:39:05.282] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: ironcoals finished after 95 ms
+[30Nov2024 14:39:05.282] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: ironcoals
+[30Nov2024 14:39:05.287] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: ironcoals finished after 4 ms
+[30Nov2024 14:39:05.287] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id ironcoals
+[30Nov2024 14:39:05.312] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id ironcoals finished after 25 ms
+[30Nov2024 14:39:05.313] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[30Nov2024 14:39:05.351] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 37 ms
+[30Nov2024 14:39:05.351] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[30Nov2024 14:39:05.359] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 8 ms
+[30Nov2024 14:39:05.360] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 178 ms
+[30Nov2024 14:39:05.364] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 83, old count: 79, new count: 84, removed stale: 0, written: 4

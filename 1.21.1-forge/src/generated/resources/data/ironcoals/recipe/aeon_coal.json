@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_block"
+    },
+    "a": {
+      "item": "ironcoals:emerald_coal"
+    },
+    "b": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "x": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "aba",
+    "x#x",
+    "aba"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ironcoals:aeon_coal"
+  }
+}
