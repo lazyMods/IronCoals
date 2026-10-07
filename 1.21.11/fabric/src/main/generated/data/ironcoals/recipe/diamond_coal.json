@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:diamond_block",
+    "a": "ironcoals:gold_coal"
+  },
+  "pattern": [
+    "aaa",
+    "a#a",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ironcoals:diamond_coal"
+  }
+}

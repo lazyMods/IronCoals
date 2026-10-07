@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ironcoals:emerald_coal_block_item",
+    "minecraft:netherite_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ironcoals:netherite_coal"
+  }
+}

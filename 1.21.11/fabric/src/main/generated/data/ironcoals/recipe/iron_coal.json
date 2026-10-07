@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:iron_block",
+    "a": "#minecraft:coals"
+  },
+  "pattern": [
+    "aaa",
+    "a#a",
+    "aaa"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ironcoals:iron_coal"
+  }
+}

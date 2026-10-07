@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ironcoals:emerald_coal_chunk",
+    "ironcoals:emerald_coal_chunk",
+    "ironcoals:emerald_coal_chunk",
+    "ironcoals:emerald_coal_chunk",
+    "ironcoals:emerald_coal_chunk",
+    "ironcoals:emerald_coal_chunk",
+    "ironcoals:emerald_coal_chunk",
+    "ironcoals:emerald_coal_chunk"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ironcoals:emerald_coal"
+  }
+}

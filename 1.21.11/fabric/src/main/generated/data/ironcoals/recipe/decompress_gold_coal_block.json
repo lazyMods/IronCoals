@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ironcoals:gold_coal_block_item"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ironcoals:gold_coal"
+  }
+}

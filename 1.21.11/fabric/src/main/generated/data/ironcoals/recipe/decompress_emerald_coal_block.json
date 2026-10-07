@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ironcoals:emerald_coal_block_item"
+  ],
+  "result": {
+    "count": 9,
+    "id": "ironcoals:emerald_coal"
+  }
+}
